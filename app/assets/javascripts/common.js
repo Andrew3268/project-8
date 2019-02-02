@@ -1,25 +1,5 @@
 $(document).ready(function(){
 
-  //for index 메뉴나타나기
-    var document_h = $(document).height();
-  //console.log(document_h);
-  $("header .gnb_mobile").height(document_h);
-  
-  $("header .gnb_open").on("click", function(){
-    $("header .gnb_kbg").fadeIn(300);
-    $("header .gnb_mobile").animate({
-      left : 0
-    },300);
-  });
-  
-  $("header .gnb_mobile>.gnb_close").on("click", function(){
-    $("header .gnb_kbg").fadeOut(300);
-    $("header .gnb_mobile").animate({
-      left : -800
-    },300);
-  });
-  
-  
   //Begin Change header when scrolling
     //스크롤 할때 header모양 변함
   var scrolling_pc;
@@ -36,8 +16,12 @@ $(document).ready(function(){
     console.log(scrolling_pc);
     if(scrolling_pc > 0){
       $("header").addClass("on");
+      $(".gadgets_wrapper main section#filter").addClass("on");
+      $(".gadgets_wrapper main .gnb_open").addClass("on");
     }else{
       $("header").removeClass("on");
+      $(".gadgets_wrapper main section#filter").removeClass("on");
+      $(".gadgets_wrapper main .gnb_open").removeClass("on");
     }
   }
   //End
@@ -54,7 +38,7 @@ $(document).ready(function(){
   $("header .gnb_m").height(document_hi);
     //메인메뉴를 열면 서브메뉴오픈 버튼이 사라짐
   $("header .gnb_open2").on("click", function(){
-    $(".gadgets-v2 main .gnb_open").hide();
+    $(".gadgets_wrapper main .gnb_open").hide();
     $(".coupons main .gnb_open").hide();      
     $("header .gnb_kbg").fadeIn(300);
     $("header .gnb_m").animate({
@@ -63,7 +47,7 @@ $(document).ready(function(){
   });
    //메인메뉴를 열면 서브메뉴오픈 버튼이 나타남
   $("header .gnb_m>.gnb_close").on("click", function(){
-    $(".gadgets-v2 main .gnb_open").show();
+    $(".gadgets_wrapper main .gnb_open").show();
     $(".coupons main .gnb_open").show();
     $("header .gnb_kbg").fadeOut(300);
     $("header .gnb_m").animate({
@@ -104,6 +88,28 @@ $(document).ready(function(){
         }, 600);
     });
     //End
+
+  //Begin show side menu on gadgets page
+  var document_gadgets = $(document).height();
+  //console.log(document_gadgets);
+  $(".gadgets_wrapper main section#filter").height(document_gadgets);
+  
+  $(".gadgets_wrapper main .gnb_open").on("click", function(){
+    $(".gadgets_wrapper main .gnb_kbg").fadeIn(300);
+    $(".gadgets_wrapper main section#filter").animate({
+      right : 0
+    },300);
+  });
+  
+  $(".gadgets_wrapper main .gnb_kbg").on("click", function(){
+    $(".gadgets_wrapper main .gnb_kbg").fadeOut(300);
+    $(".gadgets_wrapper main section#filter").animate({
+      right : -800
+    },300);
+  });   
+  //End
+
+ 
 
 });
 

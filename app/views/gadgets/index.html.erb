@@ -1,0 +1,234 @@
+<div class="layout"><!--layout-->
+
+  <%= render 'posts/header' %>
+    
+  <!-- for play youtube video-->
+  <div class="overlay-video">
+    <div class="videoWrapperExt">
+      <div class="videoWrapper">
+        <div class="video_close"></div>
+        <iframe id="player" src="" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>        
+   </div>
+  
+  <div class="gadgets_wrapper">
+    <div class="wrap">
+      <main class="clearfix">
+        
+        <button class="gnb_open"><img src="<%=asset_path 'open_btn.png' %>" alt="open" /></button>
+          <section id="filter">
+            <div class="ui-group">
+              <label>Category</label>
+              <ul>
+                <li><a href="#n">Menu</a></li>
+                <li><a href="#n">Menu</a></li>
+                <li><a href="#n">Menu</a></li>
+                <li><a href="#n">Menu</a></li>
+                <li><a href="#n">Menu</a></li>
+                <li><a href="#n">Menu</a></li>
+                <li><a href="#n">Menu</a></li>
+              </ul>
+            </div>
+          </section>
+          <div class="gnb_kbg"></div>
+          
+          <div class="on_gadgets">
+              <div class="card_wrap clearfix">
+              
+                <div class="card with-photo">
+                  <div class="card-header">
+                  <img src="https://images.unsplash.com/photo-1469964117921-4b137ced3d4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                  </div>
+                  
+                  <section class="card-body">
+                  <nav class="card-nav">
+                    <button class="nav-dots">
+                    <span class="nav-icon icon-one"></span>
+                    <span class="nav-icon icon-two"></span>
+                    <span class="nav-icon icon-three"></span>
+                    </button>
+                    <ul>
+                    <li><a href="">Link One</a></li>
+                    <li><a href="">Link Two</a></li>
+                    <li><a href="">Link Three</a></li>
+                    </ul>
+                  </nav>
+                  <!--
+                  <nav class="card-nav sns">
+                    <button class="nav-dots">
+                    <span class="nav-icon icon-one"></span>
+                    <span class="nav-icon icon-two"></span>
+                    <span class="nav-icon icon-three"></span>
+                    </button>
+                    <ul>
+                    <li><a href="">Link One</a></li>
+                    <li><a href="">Link Two</a></li>
+                    <li><a href="">Link Three</a></li>
+                    </ul>
+                  </nav>
+                  -->
+                  <div class="js-overlay-start start" data-url= "https://www.youtube.com/embed/NEdhfdmoPnM?rel=0&showinfo=0&autoplay=1">
+                    <button><img src="<%=asset_path 'youtube_02.png' %>" alt="" /></button>
+                  </div>
+                  
+                  <h4>This is a Headline</h4>
+                  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas libero sit amet quam egestas semper.</p>
+                  <div class="card_btn">
+                    <a href="">View details</a>
+                  </div>
+                  </section>
+                </div>
+                
+                <div class="card with-photo">
+                  <div class="card-header">
+                  <img src="https://images.unsplash.com/photo-1547479117-da9abbff3fa0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                  </div>
+                  
+                  <section class="card-body">
+                  <nav class="card-nav">
+                    <button class="nav-dots">
+                    <span class="nav-icon icon-one"></span>
+                    <span class="nav-icon icon-two"></span>
+                    <span class="nav-icon icon-three"></span>
+                    </button>
+                    <ul>
+                    <li><a href="">Link One</a></li>
+                    <li><a href="">Link Two</a></li>
+                    <li><a href="">Link Three</a></li>
+                    </ul>
+                  </nav>
+                  
+                  <div class="js-overlay-start start" data-url= "https://www.youtube.com/embed/NEdhfdmoPnM?rel=0&showinfo=0&autoplay=1">
+                    <button><img src="<%=asset_path 'youtube_02.png' %>" alt="" /></button>
+                  </div>
+                  
+                  <h4>This is a Headline</h4>
+                  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas libero sit amet quam egestas semper.</p>
+                  <a href="">View details</a>
+                  </section>
+                </div>
+                
+                <div class="card with-photo">
+                  <div class="card-header">
+                  <img src="https://images.unsplash.com/photo-1529910260185-8b793acb7ce0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                  </div>
+                  
+                  <section class="card-body">
+                  <nav class="card-nav">
+                    <button class="nav-dots">
+                    <span class="nav-icon icon-one"></span>
+                    <span class="nav-icon icon-two"></span>
+                    <span class="nav-icon icon-three"></span>
+                    </button>
+                    <ul>
+                    <li><a href="">Link One</a></li>
+                    <li><a href="">Link Two</a></li>
+                    <li><a href="">Link Three</a></li>
+                    </ul>
+                  </nav>
+                  
+                  <div class="js-overlay-start start" data-url= "https://www.youtube.com/embed/NEdhfdmoPnM?rel=0&showinfo=0&autoplay=1">
+                    <button><img src="<%=asset_path 'youtube_02.png' %>" alt="" /></button>
+                  </div>
+                  
+                  <h4>This is a Headline</h4>
+                  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas libero sit amet quam egestas semper.</p>
+                  <a href="">View details</a>
+                  </section>
+                </div>
+                
+                <div class="card with-photo">
+                  <div class="card-header">
+                  <img src="https://images.unsplash.com/photo-1511385278-5432b00777ed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                  </div>
+                  
+                  <section class="card-body">
+                  <nav class="card-nav">
+                    <button class="nav-dots">
+                    <span class="nav-icon icon-one"></span>
+                    <span class="nav-icon icon-two"></span>
+                    <span class="nav-icon icon-three"></span>
+                    </button>
+                    <ul>
+                    <li><a href="">Link One</a></li>
+                    <li><a href="">Link Two</a></li>
+                    <li><a href="">Link Three</a></li>
+                    </ul>
+                  </nav>
+                  
+                  <div class="js-overlay-start start" data-url= "https://www.youtube.com/embed/NEdhfdmoPnM?rel=0&showinfo=0&autoplay=1">
+                    <button><img src="<%=asset_path 'youtube_02.png' %>" alt="" /></button>
+                  </div>
+                  
+                  <h4>This is a Headline</h4>
+                  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas libero sit amet quam egestas semper.</p>
+                  <a href="">View details</a>
+                  </section>
+                </div>
+                
+                <div class="card with-photo">
+                  <div class="card-header">
+                  <img src="https://images.unsplash.com/photo-1534866845581-63b36900fca1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                  </div>
+                  
+                  <section class="card-body">
+                  <nav class="card-nav">
+                    <button class="nav-dots">
+                    <span class="nav-icon icon-one"></span>
+                    <span class="nav-icon icon-two"></span>
+                    <span class="nav-icon icon-three"></span>
+                    </button>
+                    <ul>
+                    <li><a href="">Link One</a></li>
+                    <li><a href="">Link Two</a></li>
+                    <li><a href="">Link Three</a></li>
+                    </ul>
+                  </nav>
+                  
+                  <div class="js-overlay-start start" data-url= "https://www.youtube.com/embed/NEdhfdmoPnM?rel=0&showinfo=0&autoplay=1">
+                    <button><img src="<%=asset_path 'youtube_02.png' %>" alt="" /></button>
+                  </div>
+                  
+                  <h4>This is a Headline</h4>
+                  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas libero sit amet quam egestas semper.</p>
+                  <a href="">View details</a>
+                  </section>
+                </div>
+                
+                <div class="card with-photo">
+                  <div class="card-header">
+                  <img src="https://images.unsplash.com/photo-1527754525882-563050c6618c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                  </div>
+                  
+                  <section class="card-body">
+                  <nav class="card-nav">
+                    <button class="nav-dots">
+                    <span class="nav-icon icon-one"></span>
+                    <span class="nav-icon icon-two"></span>
+                    <span class="nav-icon icon-three"></span>
+                    </button>
+                    <ul>
+                    <li><a href="">Link One</a></li>
+                    <li><a href="">Link Two</a></li>
+                    <li><a href="">Link Three</a></li>
+                    </ul>
+                  </nav>
+                  
+                  <div class="js-overlay-start start" data-url= "https://www.youtube.com/embed/NEdhfdmoPnM?rel=0&showinfo=0&autoplay=1">
+                    <button><img src="<%=asset_path 'youtube_02.png' %>" alt="" /></button>
+                  </div>
+                
+                  <h4>This is a Headline</h4>
+                  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas libero sit amet quam egestas semper.</p>
+                  <a href="">View details</a>
+                  </section>
+                </div>
+                
+              </div>
+          </div>
+
+        </main>
+      </div><!--./wrap-->
+  </div><!--./gadgets_wrapper-->
+</div><!--./layout-->
