@@ -11,6 +11,11 @@ Rails.application.routes.draw do
   get 'featured/index'
   get 'featured/featured_01'
 
+  get 'deals/promo_codes'
+  get 'deals/coupons'
+  get 'deals/quick_search'
+  get 'deals/promotions'
+
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
