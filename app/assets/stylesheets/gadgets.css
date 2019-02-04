@@ -49,8 +49,7 @@
 .on_gadgets .card_wrap .card, 
 .on_gadgets .card-nav ul{box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);}
 .on_gadgets .card_wrap .card-header,
-.on_gadgets .card_wrap .card-body,
-.on_gadgets .card_wrap .card-footer{position: relative;padding: 20px;}
+.on_gadgets .card_wrap .card-body{position:relative;padding:20px;}
 .on_gadgets .card_wrap .card-body h4{}
 .on_gadgets .card_wrap .card-body p{margin:10px 0;}
 .on_gadgets .card_wrap .card-body .card_btn a{text-decoration:none;color:#000;}
@@ -63,6 +62,10 @@
 .on_gadgets .card_wrap .sns{position:absolute;top:-41px;right:80px;}
 .on_gadgets .card_wrap .start{position:absolute;top:-41px;right:75px;}
 .on_gadgets .card_wrap .start img{width:40px;}
+.on_gadgets .card_wrap .card-footer ul{}
+.on_gadgets .card_wrap .card-footer ul li{float:left;}
+.on_gadgets .card_wrap .card-footer ul li:nth-child(2){float:right;}
+.on_gadgets .card_wrap .card-footer ul li:nth-child(2) a{text-decoration:none;color:#000;}
 .on_gadgets .card_wrap .card-nav button {-webkit-appearance: none;outline: none;cursor: pointer;position: relative;width: 40px;height:40px;border-radius:50%;border:0;/*background:#59adEb;*/background:#000;z-index:20;transition:all .25s ease;}
 .on_gadgets .card-nav button:hover {background: #70b8ee;}
 .on_gadgets .card-nav button .nav-icon {position: absolute;background: #fff;}
@@ -96,9 +99,8 @@
 
 @media screen and (max-width:640px){
   .on_gadgets{margin:80px 0;width:100%;}
-  .on_gadgets .card_wrap .card-header,
-  .on_gadgets .card_wrap .card-body,
-  .on_gadgets .card_wrap .card-footer{padding:5px;}
+  .on_gadgets .card_wrap .card-header{padding:5px;}
+  .on_gadgets .card_wrap .card-body{padding:10px;}
   .on_gadgets .card_wrap .card-nav{top:-25px;}
   .on_gadgets .card_wrap .sns{top:-25px;}
   .on_gadgets .card_wrap .start{top:-25px;}
@@ -106,9 +108,8 @@
 
 @media screen and (min-width:641px) and (max-width:1199px){
   .on_gadgets{margin:80px 0;width:100%;}
-  .on_gadgets .card_wrap .card-header,
-  .on_gadgets .card_wrap .card-body,
-  .on_gadgets .card_wrap .card-footer{padding:5px;}
+  .on_gadgets .card_wrap .card-header{padding:5px;}
+  .on_gadgets .card_wrap .card-body{padding:10px;}
   .on_gadgets .card_wrap .card-nav{top:-25px;}
   .on_gadgets .card_wrap .sns{top:-25px;}
   .on_gadgets .card_wrap .start{top:-25px;}

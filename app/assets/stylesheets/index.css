@@ -4,8 +4,7 @@
 .gadgets .card_wrap .card, 
 .gadgets .card-nav ul{box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);}
 .gadgets .card_wrap .card-header,
-.gadgets .card_wrap .card-body,
-.gadgets .card_wrap .card-footer{position: relative;padding: 20px;}
+.gadgets .card_wrap .card-body{position: relative;padding: 20px;}
 .gadgets .card_wrap .card-body h4{}
 .gadgets .card_wrap .card-body p{margin:10px 0;}
 .gadgets .card_wrap .card-body .card_btn a{text-decoration:none;color:#000;}
@@ -17,6 +16,10 @@
 .gadgets .card_wrap .card-nav{position:absolute;top:-41px;right:30px;}
 .gadgets .card_wrap .sns{position:absolute;top:-41px;right:80px;}
 .gadgets .card_wrap .start{position:absolute;top:-41px;right:75px;}
+.gadgets .card_wrap .card-footer ul{}
+.gadgets .card_wrap .card-footer ul li{float:left;}
+.gadgets .card_wrap .card-footer ul li:nth-child(2){float:right;}
+.gadgets .card_wrap .card-footer ul li:nth-child(2) a{text-decoration:none;color:#000;}
 .gadgets .card_wrap .start img{width:40px;}
 .gadgets .card_wrap .card-nav button {-webkit-appearance: none;outline: none;cursor: pointer;position: relative;width: 40px;height:40px;border-radius:50%;border:0;/*background:#59adEb;*/background:#000;z-index:20;transition:all .25s ease;}
 .gadgets .card-nav button:hover {background: #70b8ee;}
@@ -51,9 +54,8 @@
 
 @media screen and (max-width:640px){
   .gadgets{margin:80px 0;}
-  .gadgets .card_wrap .card-header,
-  .gadgets .card_wrap .card-body,
-  .gadgets .card_wrap .card-footer{padding:5px;}
+  .gadgets .card_wrap .card-header{padding:5px;}
+  .gadgets .card_wrap .card-body{padding:10px;}
   .gadgets .card_wrap .card-nav{top:-25px;}
   .gadgets .card_wrap .sns{top:-25px;}
   .gadgets .card_wrap .start{top:-25px;}
@@ -61,9 +63,8 @@
 
 @media screen and (min-width:641px) and (max-width:1199px){
   .gadgets{margin:160px 0;}
-  .gadgets .card_wrap .card-header,
-  .gadgets .card_wrap .card-body,
-  .gadgets .card_wrap .card-footer{padding:5px;}
+  .gadgets .card_wrap .card-header{padding:5px;}
+  .gadgets .card_wrap .card-body{padding:10px;}
   .gadgets .card_wrap .card-nav{top:-25px;}
   .gadgets .card_wrap .sns{top:-25px;}
   .gadgets .card_wrap .start{top:-25px;}

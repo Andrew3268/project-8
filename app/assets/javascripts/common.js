@@ -144,5 +144,18 @@ $(document).ready(function(){
   });
   //End
 
+  //Begin Highlight All Links To Current Page
+  $(function(){
+   $("header .gnb_pc>ul>li>a").each(function(){
+     if ($(this).attr("href") == window.location.pathname){
+          $(this).addClass("active");
+     }
+   });
+  });
+  //End 
+
+
+
+
 });
 
