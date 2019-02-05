@@ -4,7 +4,12 @@ class GadgetsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
 
   def index
-    @gadgets = Gadget.all.order("created_at DESC")
+    if params[:category].blank?
+     @gadgets = Gadget.all.order("created_at DESC")
+    else
+      @category_id = Category.find_by(name: params[:category]).id
+      @gadgets = Gadget.where(category_id: @category_id).order("created_at DESC")
+    end
   end
 
   def show
@@ -47,7 +52,7 @@ class GadgetsController < ApplicationController
   end
 
   def gadget_params
-    params.require(:gadget).permit(:gad_title, :gad_intro, :gad_price, :gad_link, :gad_img, :gad_youtube)
+    params.require(:gadget).permit(:gad_title, :gad_intro, :gad_price, :gad_link, :gad_img, :gad_youtube, :category_id)
   end
   
 end

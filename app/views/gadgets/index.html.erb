@@ -22,12 +22,10 @@
             <div class="ui-group">
               <label>Category</label>
               <ul>
-                <li><a href="#n">Menu</a></li>
-                <li><a href="#n">Menu</a></li>
-                <li><a href="#n">Menu</a></li>
-                <li><a href="#n">Menu</a></li>
-                <li><a href="#n">Menu</a></li>
-                <li><a href="#n">Menu</a></li>
+                <li><%= link_to "All Gadgets", root_path %></li>
+                <% Category.all.each do |category| %>
+                  <li><%= link_to category.name, gadgets_path(category: category.name) %></li>
+                <% end %>
                 <li><%= link_to "Add New Gadgets", new_gadget_path %></li>
               </ul>
             </div>
@@ -70,6 +68,7 @@
                   </div>
                 <% end %>
                 
+                <!--
                 <div class="card with-photo">
                   <div class="card-header">
                   <img src="https://images.unsplash.com/photo-1547479117-da9abbff3fa0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
@@ -218,6 +217,7 @@
                 </div>
                 
               </div>
+              -->
           </div>
 
         </main>
