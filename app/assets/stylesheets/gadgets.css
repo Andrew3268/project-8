@@ -7,6 +7,7 @@
 .gadgets_wrapper main section#filter .ui-group ul{}
 .gadgets_wrapper main section#filter .ui-group ul li{}
 .gadgets_wrapper main section#filter .ui-group ul li a{margin-top:15px;cursor:pointer;display:block;text-decoration:none;color:#3d3d3d;}
+.gadgets_wrapper main section#filter .ui-group ul li a.active{background:#000;color:#fff;}
 .gadgets_wrapper main section#filter .ui-group input{display:none;}
 .gadgets_wrapper main section#filter .color_group{margin-top:20px;}
 .gadgets_wrapper main .gnb_open, .gadgets_wrapper main .gnb_open_b{display:none;}

@@ -18,6 +18,7 @@
 .gadgets .card_wrap .card-nav ul{transition: all .5s ease;}
 .gadgets .card_wrap .card-nav{position:absolute;top:-26px;right:30px;}
 .gadgets .card_wrap .start{position:absolute;top:-26px;right:75px;}
+.gadgets .card_wrap .admin{position:absolute;top:-26px;right:120px;}
 .gadgets .card_wrap .card-footer ul{}
 .gadgets .card_wrap .card-footer ul li{float:left;}
 .gadgets .card_wrap .card-footer ul li:nth-child(2){float:right;}

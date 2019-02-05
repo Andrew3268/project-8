@@ -39,16 +39,24 @@
                 <div class="js-overlay-start start" data-url= "<%= gadget.gad_youtube %>">
                   <button><img src="<%=asset_path 'youtube_02.png' %>" alt="" /></button>
                 </div>
+
+                <nav class="card-nav admin">
+                  <button class="nav-dots">
+                  <span class="nav-icon icon-one"></span>
+                  <span class="nav-icon icon-two"></span>
+                  <span class="nav-icon icon-three"></span>
+                  </button>
+                  <ul>
+                    <li><%= link_to "Edit", edit_gadget_path(gadget) %></li>
+                    <li><%= link_to "Delete", gadget_path(gadget), method: :delete, data: {confirm: "Are you sure?"}%></li>
+                  </ul>
+                </nav>
               
                 <h4><a target="_blank" href="<%= gadget.gad_link %>"><%= gadget.gad_title %></a></h4>
                 <p><%= gadget.gad_intro %></p>
                 <div class="btn clearfix">
                   <em>$<%= gadget.gad_price %></em><a target="_blank" href="<%= gadget.gad_link %>">Buy Now</a>
                 </div>
-                <div class="admin">
-                  <%= link_to "Edit", edit_gadget_path(gadget) %>
-                  <%= link_to "Delete", gadget_path(gadget), method: :delete, data: {confirm: "Are you sure?"}%>
-                </div>              
               </section>
             </div>
           <% end %>

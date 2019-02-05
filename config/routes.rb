@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get 'deals/coupons'
   get 'deals/quick_search'
   get 'deals/promotions'
+  get 'deals/codes'
 
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

@@ -32,7 +32,7 @@ $(document).ready(function(){
    //함수선언
   function scroll_check(){
     scrolling_pc = $(window).scrollTop();
-    console.log(scrolling_pc);
+    //console.log(scrolling_pc);
     if(scrolling_pc > 0){
       $("header").addClass("on");
     }else{

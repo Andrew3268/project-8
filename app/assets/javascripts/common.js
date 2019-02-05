@@ -13,7 +13,7 @@ $(document).ready(function(){
      //함수선언
     function scroll_check(){
       scrolling_pc = $(window).scrollTop();
-      console.log(scrolling_pc);
+      //console.log(scrolling_pc);
       if(scrolling_pc > 0){
         $("header").addClass("on");
         $(".gadgets_wrapper main section#filter").addClass("on");
@@ -144,7 +144,7 @@ $(document).ready(function(){
   });
   //End
 
-  //Begin Highlight All Links To Current Page
+  //Begin Highlight All Links To Current Page for Main menu
   $(function(){
    $("header .gnb_pc>ul>li>a").each(function(){
      if ($(this).attr("href") == window.location.pathname){
@@ -153,8 +153,6 @@ $(document).ready(function(){
    });
   });
   //End 
-
-
 
 
 });
