@@ -1,0 +1,11 @@
+<img src="<%= @gadget.gad_img %>" alt="" />
+<h1><%= @gadget.gad_title %></h1>
+<p><%= @gadget.gad_intro %></p>
+<a href="<%= @gadget.gad_youtube %>">Youtube</a>
+<p>$<%= @gadget.gad_price %></p>
+<a href="<%= @gadget.gad_link %>">Buy Now</a>
+<br />
+<br />
+<%= link_to "HOME", root_path %>
+<%= link_to "Edit", edit_gadget_path(@gadget) %>
+<%= link_to "Delete", gadget_path(@gadget), method: :delete, data: { confirm: "Are you sure?" } %>

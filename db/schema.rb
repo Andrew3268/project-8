@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190124122052) do
+ActiveRecord::Schema.define(version: 20190205064808) do
+
+  create_table "gadgets", force: :cascade do |t|
+    t.string "gad_title"
+    t.text "gad_intro"
+    t.string "gad_price"
+    t.string "gad_link"
+    t.string "gad_img"
+    t.string "gad_youtube"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "posts", force: :cascade do |t|
     t.string "title"
