@@ -1,6 +1,7 @@
 class GadgetsController < ApplicationController
 
   before_action :find_gadget, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:index, :show]
 
   def index
     @gadgets = Gadget.all.order("created_at DESC")
@@ -11,11 +12,11 @@ class GadgetsController < ApplicationController
   end
 
   def new
-    @gadget = Gadget.new
+    @gadget = current_user.gadgets.build
   end
 
   def create
-    @gadget = Gadget.new(gadget_params)
+    @gadget = current_user.gadgets.build(gadget_params)
     if @gadget.save
       redirect_to @gadget
     else
