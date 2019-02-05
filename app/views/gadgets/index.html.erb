@@ -38,7 +38,7 @@
                 <% @gadgets.each do |gadget| %>
                   <div class="card with-photo">
                     <div class="card-header">
-                     <a href="#n"><img src="<%= gadget.gad_img %>" alt=""></a>
+                     <a target="_blank" href="<%= gadget.gad_link %>"><img src="<%= gadget.gad_img %>" alt=""></a>
                     </div>
                     
                     <section class="card-body">
@@ -59,10 +59,10 @@
                         <button><img src="<%=asset_path 'youtube_02.png' %>" alt="" /></button>
                       </div>
                     
-                      <h4><%= link_to gadget.gad_title, gadget %></h4>
+                      <h4><a target="_blank" href="<%= gadget.gad_link %>"><%= gadget.gad_title %></a></h4>
                       <p><%= gadget.gad_intro %></p>
                       <div class="btn clearfix">
-                        <em>$<%= gadget.gad_price %></em><a href="<%= gadget.gad_link %>">Buy Now</a>
+                        <em>$<%= gadget.gad_price %></em><a target="_blank" href="<%= gadget.gad_link %>">Buy Now</a>
                       </div>              
                     </section>
                   </div>
