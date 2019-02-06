@@ -26,5 +26,7 @@ Rails.application.routes.draw do
 
   resources :gadgets
   # root 'gadgets#index'
+  # root 'gadgets#index_02'
+  
   
 end

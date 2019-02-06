@@ -22,7 +22,7 @@
             <div class="ui-group">
               <label>Category</label>
               <ul>
-                <li class="active"><%= link_to "All Gadgets", gadgets_path %></li>
+                <li><%= link_to "All Gadgets", gadgets_path %></li>
                 <% Category.all.each do |category| %>
                   <li><%= link_to category.name, gadgets_path(category: category.name) %></li>
                 <% end %>
@@ -31,16 +31,19 @@
                   <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
                 <% else %>
                  <li><%= link_to "Log in", new_user_session_path %></li>
-                 <li><%= link_to "Sign up", new_user_registration_path %></li>
+                 <!--<li><%= link_to "Sign up", new_user_registration_path %></li>-->
                 <% end %>
               </ul>
             </div>
           </section>
           <div class="gnb_kbg"></div>
           
+
           <div class="on_gadgets">
               <div class="card_wrap clearfix">
 
+                
+                
                 <% @gadgets.each do |gadget| %>
                   <div class="card with-photo">
                     <div class="card-header">
@@ -73,6 +76,7 @@
                     </section>
                   </div>
                 <% end %>
+                
                 
                 <!--
                 <div class="card with-photo">

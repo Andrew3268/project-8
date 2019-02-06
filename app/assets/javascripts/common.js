@@ -19,11 +19,15 @@ $(document).ready(function(){
         $(".gadgets_wrapper main section#filter").addClass("on");
         $(".gadgets_wrapper main .gnb_open").addClass("on");
         $(".gadgets_wrapper main .gnb_open_b").addClass("on");
+        $(".sub_nav .gnb_open").addClass("on");
+        $(".sub_nav .gnb_open_b").addClass("on");
       }else{
         $("header").removeClass("on");
         $(".gadgets_wrapper main section#filter").removeClass("on");
         $(".gadgets_wrapper main .gnb_open").removeClass("on");
-        $(".gadgets_wrapper main .gnb_open_b").addClass("on");
+        $(".gadgets_wrapper main .gnb_open_b").removeClass("on");
+        $(".sub_nav .gnb_open").removeClass("on");
+        $(".sub_nav .gnb_open_b").removeClass("on");
       }
     }
   //End
@@ -41,7 +45,7 @@ $(document).ready(function(){
       //메인메뉴를 열면 서브메뉴오픈 버튼이 사라짐
     $("header .gnb_open2").on("click", function(){
       $(".gadgets_wrapper main .gnb_open").hide();
-      $(".coupons main .gnb_open").hide();      
+      $(".sub_nav .gnb_open").hide();      
       $("header .gnb_kbg").fadeIn(300);
       $("header .gnb_m").animate({
         left : 0
@@ -50,7 +54,7 @@ $(document).ready(function(){
      //메인메뉴를 열면 서브메뉴오픈 버튼이 나타남
     $("header .gnb_m>.gnb_close").on("click", function(){
       $(".gadgets_wrapper main .gnb_open").show();
-      $(".coupons main .gnb_open").show();
+      $(".sub_nav .gnb_open").show();
       $("header .gnb_kbg").fadeOut(300);
       $("header .gnb_m").animate({
         left : -800
@@ -127,7 +131,7 @@ $(document).ready(function(){
 
   //Begin Opne&Close Menu on Deals Page
   var menu_status;
-  $(".deals_sub_nav .sub_nav_mobile>ul>li>a").on("click", function(){
+  $(".sub_nav .sub_nav_mobile>ul>li>a").on("click", function(){
     menu_status = $(this).parent().hasClass("on");
     //console.log(menu_status);
     if(menu_status == true){
@@ -136,12 +140,47 @@ $(document).ready(function(){
       $(this).next().slideUp();
     }else{
       //지금 닫혀있는 상태 - 여는기능
-      $(".deals_sub_nav .sub_nav_mobile>ul>li").removeClass("on");
-      $(".deals_sub_nav .sub_nav_mobile>ul>li>ul").slideUp();
+      $(".sub_nav .sub_nav_mobile>ul>li").removeClass("on");
+      $(".sub_nav .sub_nav_mobile>ul>li>ul").slideUp();
       $(this).parent().addClass("on");
       $(this).next().slideDown();
     }
   });
+  //End
+
+
+  //Begin show side menu on gadgets page
+    var document_deals = $(document).height();
+      //console.log(document_deals);
+      $(".sub_nav .gnb_m").height(document_deals);
+      
+      $(".sub_nav .gnb_open").on("click", function(){
+        $(".sub_nav .gnb_kbg").fadeIn(300);
+        $(".sub_nav .gnb_m").animate({
+          right : 0
+        },300);
+      });
+      
+      $(".sub_nav .gnb_close").on("click", function(){
+        $(".sub_nav .gnb_kbg").fadeOut(300);
+        $(".sub_nav .gnb_m").animate({
+          right : -800
+        },300);
+      });
+
+      $(".sub_nav .gnb_open_b").on("click", function(){
+        $(".sub_nav .gnb_kbg").fadeIn(300);
+        $(".sub_nav .gnb_m").animate({
+          right : 0
+        },300);
+      });
+      
+      $(".sub_nav .gnb_close").on("click", function(){
+        $(".sub_nav .gnb_kbg").fadeOut(300);
+        $(".sub_nav .gnb_m").animate({
+          right : -1000
+        },300);
+      });
   //End
 
   //Begin Highlight All Links To Current Page for Main menu
@@ -153,6 +192,13 @@ $(document).ready(function(){
    });
   });
   //End 
+
+  $('.gadgets_wrapper main section#filter .ui-group ul li a').click(function(){
+    $('.gadgets_wrapper main section#filter .ui-group ul li a').removeClass('active');
+    $(this).addClass('active')
+  });
+
+
 
 
 });

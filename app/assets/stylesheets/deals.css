@@ -19,41 +19,6 @@
   .deal_common .rt_cnt{float:none;width:100%;}
 }
 
-/* Deals sub menu */
-.deals_sub_nav{margin-top:300px;}
-.deals_sub_nav .sub_nav_pc{}
-.deals_sub_nav .sub_nav_pc>ul{}
-.deals_sub_nav .sub_nav_pc>ul>li{float:left;width:100px;text-align:center;}
-.deals_sub_nav .sub_nav_pc>ul>li>a{text-decoration:none;color:#3d3d3d;font-size:15px;display:block;font-weight:400;}
-.deals_sub_nav .sub_nav_pc>ul>li>a.active{color:#000;font-weight:500;border-bottom:2px solid #000;}
-.deals_sub_nav .sub_nav_mobile{display:none;}
-
-@media screen and (max-width:640px){
-  .deals_sub_nav{margin-top:100px;}
-  .deals_sub_nav .sub_nav_pc{display:none;}
-  .deals_sub_nav .sub_nav_mobile{display:block;}
-  .deals_sub_nav .sub_nav_mobile>ul>li{border-bottom:1px solid #ccc;background:url(/assets/down_btn.jpg) right 5% top 17px no-repeat;}
-  .deals_sub_nav .sub_nav_mobile>ul>li.on{background:url(/assets/up_btn.jpg) right 5% top 17px no-repeat;}
-  .deals_sub_nav .sub_nav_mobile>ul>li>a{display:block;color:#000;font-size:25px;text-decoration:none;}
-  .deals_sub_nav .sub_nav_mobile>ul>li>ul{display:none;background:#fff;padding:10px 0;}
-  .deals_sub_nav .sub_nav_mobile>ul>li>ul>li{padding:3px 0;}
-  .deals_sub_nav .sub_nav_mobile>ul>li>ul>li>a{text-decoration:none;color:#000;font-size:17px;padding:7px 0 7px 10%;font-weight:300;}
-  .deals_sub_nav .sub_nav_mobile>ul>li>ul>li>a.active{color:#7bc242;font-weight:500;}
-}
-
-@media screen and (min-width:641px) and (max-width:1199px){
-  .deals_sub_nav{margin-top:180px;}
-  .deals_sub_nav .sub_nav_pc{display:none;}
-  .deals_sub_nav .sub_nav_mobile{display:block;}
-  .deals_sub_nav .sub_nav_mobile>ul>li{border-bottom:1px solid #ccc;background:url(/assets/down_btn.jpg) right 1.5% top 20px no-repeat;}
-  .deals_sub_nav .sub_nav_mobile>ul>li.on{background:url(/assets/up_btn.jpg) right 1.5% top 20px no-repeat;}
-  .deals_sub_nav .sub_nav_mobile>ul>li>a{display:block;color:#000;font-size:25px;text-decoration:none;}
-  .deals_sub_nav .sub_nav_mobile>ul>li>ul{display:none;background:#fff;padding:10px 0;}
-  .deals_sub_nav .sub_nav_mobile>ul>li>ul>li{padding:3px 0;}
-  .deals_sub_nav .sub_nav_mobile>ul>li>ul>li>a{text-decoration:none;color:#000;font-size:17px;padding:7px 0 7px 3%;font-weight:300;}
-  .deals_sub_nav .sub_nav_mobile>ul>li>ul>li>a.active{color:#7bc242;font-weight:500;}
-}
-
 
 /* Section Promo Code */
 @media screen and (min-width:640px){
