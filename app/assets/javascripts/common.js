@@ -183,6 +183,7 @@ $(document).ready(function(){
       });
   //End
 
+
   //Begin Highlight All Links To Current Page for Main menu
   $(function(){
    $("header .gnb_pc>ul>li>a").each(function(){
@@ -192,14 +193,27 @@ $(document).ready(function(){
    });
   });
   //End 
-
-  $('.gadgets_wrapper main section#filter .ui-group ul li a').click(function(){
-    $('.gadgets_wrapper main section#filter .ui-group ul li a').removeClass('active');
-    $(this).addClass('active')
+  
+  //Begin Highlight All Links To Current Page for deals header
+  $(function(){
+   $(".sub_nav .sub_nav_pc>ul>li>a").each(function(){
+     if ($(this).attr("href") == window.location.pathname){
+          $(this).addClass("active");
+     }
+   });
   });
-
-
-
+  //End 
+  
+  //Begin Highlight All Links To Current Page for deals mobile
+  $(function(){
+   $(".sub_nav .gnb_m>ul>li>a").each(function(){
+     if ($(this).attr("href") == window.location.pathname){
+          $(this).addClass("active");
+     }
+   });
+  });
+  //End 
+  
 
 });
 

@@ -37,12 +37,18 @@
             </div>
           </section>
           <div class="gnb_kbg"></div>
-          
 
           <div class="on_gadgets">
+            
+              <div class="current_category">
+                <% if params[:category].present? %>
+                  <p><%= params[:category] %></h2>
+                <% else %>
+                  <p>all gadgets</p>
+                <% end %>
+              </div>
+              
               <div class="card_wrap clearfix">
-
-                
                 
                 <% @gadgets.each do |gadget| %>
                   <div class="card with-photo">
