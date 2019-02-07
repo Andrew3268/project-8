@@ -129,9 +129,9 @@ $(document).ready(function(){
     });   
   //End
 
-  //Begin Opne&Close Menu on Deals Page
+  //Begin Opne&Close Menu on promo_code
   var menu_status;
-  $(".sub_nav .sub_nav_mobile>ul>li>a").on("click", function(){
+  $(".codes .lt_cnt .toggle>ul>li>a").on("click", function(){
     menu_status = $(this).parent().hasClass("on");
     //console.log(menu_status);
     if(menu_status == true){
@@ -140,8 +140,8 @@ $(document).ready(function(){
       $(this).next().slideUp();
     }else{
       //지금 닫혀있는 상태 - 여는기능
-      $(".sub_nav .sub_nav_mobile>ul>li").removeClass("on");
-      $(".sub_nav .sub_nav_mobile>ul>li>ul").slideUp();
+      $(".codes .lt_cnt .toggle>ul>li").removeClass("on");
+      $(".codes .lt_cnt .toggle>ul>li>ul").slideUp();
       $(this).parent().addClass("on");
       $(this).next().slideDown();
     }
@@ -184,36 +184,46 @@ $(document).ready(function(){
   //End
 
 
-  //Begin Highlight All Links To Current Page for Main menu
-  $(function(){
-   $("header .gnb_pc>ul>li>a").each(function(){
+  function fun_nav(fun_name){
+    $(fun_name).each(function(){
      if ($(this).attr("href") == window.location.pathname){
           $(this).addClass("active");
      }
    });
-  });
-  //End 
+  }
   
-  //Begin Highlight All Links To Current Page for deals header
+  //Begin Highlight All Links To Current Page for deals mobile
   $(function(){
-   $(".sub_nav .sub_nav_pc>ul>li>a").each(function(){
-     if ($(this).attr("href") == window.location.pathname){
-          $(this).addClass("active");
-     }
-   });
+     fun_nav(".sub_nav .gnb_m>ul>li>a");
   });
   //End 
   
   //Begin Highlight All Links To Current Page for deals mobile
   $(function(){
-   $(".sub_nav .gnb_m>ul>li>a").each(function(){
-     if ($(this).attr("href") == window.location.pathname){
-          $(this).addClass("active");
-     }
-   });
+     fun_nav(".sub_nav .sub_nav_pc>ul>li>a");
   });
   //End 
   
+  //Begin Highlight All Links To Current Page for deals mobile
+  $(function(){
+     fun_nav("header .gnb_pc>ul>li>a");
+  });
+  //End 
+  
+  function multiply(R, G, B) {
+    var imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+    var data = imgData.data;
+  
+    for (var i = 0; i < data.length; i += 4) {
+      data[i    ] = R * data[i    ] / 255;
+      data[i + 1] = G * data[i + 1] / 255;
+      data[i + 2] = B * data[i + 2] / 255;
+    }
+  
+    ctx.putImageData(imgData, 0, 0);
+  }
+  
+
 
 });
 

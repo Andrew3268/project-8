@@ -4,13 +4,28 @@
 
     <%= render 'deals/header' %>    
     
-    <div class="codes deal_common">
+    <div class="codes common_layout">
       <div class="wrap">
         <div class="lt_cnt">
           <h2>Promotion Codes</h2>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
           
-          <h3>HOW TO USE</h3>
+          <div class="toggle">
+            <ul>
+              <li>
+                <a href="#n">HOW TO USE</a>
+                <ul>
+                  <li><p>text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#n">Show last Promo Codes</a>
+                <ul>
+                  <li><p>text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
         
         <div class="rt_cnt">
@@ -19,11 +34,28 @@
           <div class="card_wrap">
             <div class="card clearfix">
               <div class="image_box">
-                <a href="#n"><img src="https://images.unsplash.com/photo-1534236874052-bef0ac071a50?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" /></a>
+                <a target="_blank" href="#n"><img src="https://images.unsplash.com/photo-1534236874052-bef0ac071a50?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" /></a>
               </div>
               <div class="inner">
                 <span class="regular"><em>50% OFF +</em> free shipping</span>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <div class="code_high">
+                  <p><span>Take <strong>30% off</strong> your purchase <strong>using code: hellowrld1234</strong>
+                  </p></span>
+                </div>
+              </div> 
+              <div class="deal_btn">
+                <a target="_blank" href="#n">Copy & Use code</a>
+              </div>
+            </div>
+            
+            <div class="card clearfix">
+              <div class="image_box">
+                <a href="#n"><img src="https://images.unsplash.com/photo-1542841366-ddfe55c504a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" /></a>
+              </div>
+              <div class="inner clearfix">
+                <span class="regular"><em>50% OFF +</em> free shipping</span>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 <div class="code_high">
                   <p><span>Take <strong>30% off</strong> your purchase <strong>using code: hellowrld1234</strong>
                   </p></span>
@@ -36,26 +68,15 @@
             
             <div class="card clearfix">
               <div class="image_box">
-                <a href="#n"><img src="https://images.unsplash.com/photo-1542841366-ddfe55c504a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" /></a>
+                <a href="#n"><img src="https://images.unsplash.com/photo-1549409829-782dfd401d01?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" /></a>
               </div>
               <div class="inner clearfix">
                 <span class="regular"><em>50% OFF +</em> free shipping</span>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                <p>Take 30% off your purchase using code: <strong>hellowrld1234</strong></p>
-              </div> 
-              <div class="deal_btn">
-                <a href="#n">Copy & Use code</a>
-              </div>
-            </div>
-            
-            <div class="card clearfix">
-              <div class="image_box">
-                <a href="#n"><img src="https://images.unsplash.com/photo-1542841366-ddfe55c504a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" /></a>
-              </div>
-              <div class="inner clearfix">
-                <span class="regular"><em>50% OFF +</em> free shipping</span>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                <p>Take 30% off your purchase using code: <strong>hellowrld1234</strong></p>
+                <div class="code_high">
+                  <p><span>Take <strong>30% off</strong> your purchase <strong>using code: hellowrld1234</strong>
+                  </p></span>
+                </div>
               </div> 
               <div class="deal_btn">
                 <a href="#n">Copy & Use code</a>
@@ -63,7 +84,7 @@
             </div>
 
           </div>
-        </div>    
+        </div><!--./rt_cnt-->    
 
       </div><!--./warp-->
     </div><!--./codes-->

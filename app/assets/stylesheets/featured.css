@@ -14,25 +14,6 @@
   .cu_sub_nav{margin-top:200px;}
 }
 
-/* Common Layout */
-.deal_common{margin:50px 0 0 0;}
-.deal_common .lt_cnt{float:left;width:28%;margin-right:2%;}
-.deal_common .lt_cnt h2{border-bottom:2px solid #3d3d3d;padding-bottom:3px;margin-bottom:10px;}
-.deal_common .rt_cnt{float:left;width:70%;}
-.deal_common .rt_cnt h2{border-bottom:2px solid #3d3d3d;padding-bottom:3px;margin-bottom:10px;}
-
-@media screen and (max-width:640px){
-  .deal_common{margin:20px 0 0 0;}
-  .deal_common .lt_cnt{float:none;width:100%;margin:0 0 30px 0;}
-  .deal_common .rt_cnt{float:none;width:100%;}
-}
-
-@media screen and (min-width:641px) and (max-width:1199px){
-  .deal_common{margin:30px 0 0 0;}
-  .deal_common .lt_cnt{float:none;width:100%;margin:0 0 30px 0;}
-  .deal_common .rt_cnt{float:none;width:100%;}
-}
-
 /* Current Location */
 .location{margin-top:260px;}
 .location .inner{background:url(/assets/location.png)left center no-repeat;}
@@ -240,7 +221,7 @@
 .editor .rt_cnt .card_wrap{column-width:270px;column-gap:15px;}
 .editor .rt_cnt .card_wrap .card{display: inline-block;border:1px solid rgba(0,0,0,0.2);margin:0;margin-bottom: 15px;padding:10px;box-shadow: 1px 1px 3px rgba(0,0,0,0.5);}
 .editor .rt_cnt .card_wrap .card a{text-decoration:none;color:#000;}
-.editor .rt_cnt .card_wrap .card a h3{background:#000;color:#fff;font-weight:300;padding:10px;}
+.editor .rt_cnt .card_wrap .card a h3{background:#000;color:#fff;padding:10px;line-height:1.4;font-weight:300;}
 .editor .rt_cnt .card_wrap .card a p{margin:10px 0;border-bottom:1px solid #ccc;padding-bottom:10px;}
 .editor .rt_cnt .card_wrap .card a em{color:#858585;float:right;}
 .editor .rt_cnt .card_wrap .card a span{color:#858585;}
