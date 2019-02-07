@@ -210,20 +210,13 @@ $(document).ready(function(){
   });
   //End 
   
-  function multiply(R, G, B) {
-    var imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-    var data = imgData.data;
   
-    for (var i = 0; i < data.length; i += 4) {
-      data[i    ] = R * data[i    ] / 255;
-      data[i + 1] = G * data[i + 1] / 255;
-      data[i + 2] = B * data[i + 2] / 255;
-    }
   
-    ctx.putImageData(imgData, 0, 0);
-  }
   
-
+  
+  
+  
+  
 
 });
 
