@@ -165,6 +165,36 @@
   .code_main .intro em{font-size:17px;font-weight:400;}
 }
 
+.blog{}
+.blog .blog_box{margin:20px 0 50px 0;}
+.blog .date{float:left;width:8%;margin:0 1%;text-align:center;}
+.blog .date em{font-size:30px;font-weight:400;border-bottom:1px solid #ccc;display:inline-block;}
+.blog .date p{font-size:65px;font-weight:400;line-height:1;}
+.blog .image{float:left;width:43%;margin:0 1%;}
+.blog .image span{display:none;}
+.blog .image img{width:100%;}
+.blog .inner{float:left;width:43%;margin:0 1%;}
+.blog .inner h3{line-height:1.4;}
+.blog .inner h3 a{text-decoration:none;color:#000;}
+.blog .inner p{margin:10px 0;border-bottom:1px solid #ccc;padding-bottom:5px;}
+.blog .inner .more_btn{position:relative;}
+.blog .inner .more_btn a{padding:10px 0;display:block;float:right;margin-right:55px;text-decoration:none;color:#ccc;}
+.blog .inner .more_btn img{position:absolute;top:-2px;right:0;}
+
+@media screen and (max-width:640px){
+	.blog .blog_box{margin:20px 0 50px 0;}
+	.blog .date{display:none;}
+	.blog .image{float:none;width:100%;margin:0;}
+	.blog .image span{display:block;border-bottom:1px solid;margin-bottom:2px;}
+	.blog .inner{float:none;width:100%;margin:0;}
+}
+
+@media screen and (min-width:641px) and (max-width:1199px){
+	.blog .lt_cnt{float:left;width:28%;margin:0 2% 30px 0;}
+	.blog .rt_cnt{float:left;width:70%;}
+	.blog .date em{font-size:15px;}
+	.blog .date p{font-size:35px;}
+}
 
 
 

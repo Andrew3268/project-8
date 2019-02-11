@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+ 
+
   devise_for :users
   get 'gadgets/index'
 
@@ -8,6 +10,8 @@ Rails.application.routes.draw do
 
   get 'gift_guide/index'
   get 'gift_guide/gift_guide_01'
+  
+  get 'blog/index'
 
   get 'featured/index'
   get 'featured/featured_01'

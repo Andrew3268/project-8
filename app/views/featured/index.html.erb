@@ -1,70 +1,183 @@
 <div class="layout"><!--layout-->
     
-    <%= render 'posts/header' %>
+  <%= render 'posts/header' %>
     
-    <div class="wrap">
+  <div class="wrap">
     
       <div class="cu_sub_nav">
         <ul class="clearfix">
           <li><a class="active" href="/featured/index">Featured</a></li>
-          <li><a href="/gift_guide/index">Gift Guide</a></li>
+          <!--<li><a href="/gift_guide/index">Gift Guide</a></li>-->
           <li><a href="/editor/index">Editor's Pick</a></li>
+          <li><a href="/blog/index">Blog</a></li>
         </ul>
       </div>
 
       <div class="featured common_layout clearfix">
       
         <div class="lt_cnt deal">
-          <h2>Featured</h2>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-        </div>
-        
-        <div class="rt_cnt">
-          <h2>We Love </h2>
-          
-          <div class="cu_banner">
-            <div class="clearfix">
-              <div class="cu_image"><a href="#n"><img src="https://images.unsplash.com/photo-1462037629520-2a7c6feac7f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" /></a></div>
-              <div class="inner">
-                <h3>Bristly: World's Most Effective Dog Toothbrush</h3>
-                <p>발휘하기 못할 아름답고 약동하다. 무엇을 그것은 그러므로 목숨이 위하여 긴지라 이것은 밝은 것이다. 굳세게 타오르고 예가 우리 용감하고 약동하다. 예수는 고동을 하는 밝은 인도하겠다는 석가는 넣는 있으랴? 트고, 청춘이 불어 용감하고 못하다 들어 듣는다. 천고에 생생하며, 얼음이 거선의 긴지라 낙원을 아름다우냐?</p>
-                <div class="more">
-                  <a href="/featured/featured_01">Learn More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-      
-          <ul class="clearfix">
+			<h2>Featured</h2>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+			
+			<button class="gnb_open"><img src="<%=asset_path 'open_black.png' %>" alt="모바일 메뉴 열기" /></button>
+			<div class="sm_pc">
+				<div class="search_bar">
+					<input type="text" class="form-control" placeholder="Search...">
+					<img src="<%=asset_path 'search.png' %>" alt="" />
+				</div>
+				<ul class="filter-search">
+				  <li><button class="filter-button btn btn-md btn-primary" data-filter="*">All Categories</button></li>
+				  <li><button class="filter-button btn btn-md white-text" data-filter="tech">Tech+</button></li>
+				  <li><button class="filter-button btn btn-md" data-filter="smarthome">Smart Home</button></li>
+				  <li><button class="filter-button btn btn-md" data-filter="kitchen">Kitchen&Home</button></li>
+				  <li><button class="filter-button btn btn-md white-text" data-filter="fashion">Fashion</button></li>
+				  <li><button class="filter-button btn btn-md white-text" data-filter="geeky">Geeky</button></li>
+				</ul>
+			</div>
+			
+			<div class="sm_mobile">
+				<ul class="filter-search">
+				  <li><button class="filter-button btn btn-md btn-primary" data-filter="*">All Categories</button></li>
+				  <li><button class="filter-button btn btn-md white-text" data-filter="tech">Tech+</button></li>
+				  <li><button class="filter-button btn btn-md" data-filter="smarthome">Smart Home</button></li>
+				  <li><button class="filter-button btn btn-md" data-filter="kitchen">Kitchen&Home</button></li>
+				  <li><button class="filter-button btn btn-md white-text" data-filter="fashion">Fashion</button></li>
+				  <li><button class="filter-button btn btn-md white-text" data-filter="geeky">Geeky</button></li>
+				</ul>
+				<button class="gnb_close"><img src="<%=asset_path 'close_black.png' %>" alt="모바일 메뉴 닫기" />
+			</div>
+			
+		</div><!--./lt_cnt-->
+		<div class="gnb_kbg"></div>
+				
+		<div class="rt_cnt">
+			<h2>We Love </h2>
+			
+			<div class="gift_guide clearfix">
+				<a href="giftguide_detail.html">
+					<div class="gift_box card_01">
+						<div class="inner">
+							<p>FOR <span>HIM<span></p>
+						</div>
+					</div>
+				</a>
+			
+				<a href="giftguide_detail.html">
+					<div class="gift_box card_02">
+						<div class="inner">
+							<p>FOR <span>HER<span></p>
+						</div>
+					</div>
+				</a>
+			
+				<a href="giftguide_detail.html">
+					<div class="gift_box card_03">
+						<div class="inner">
+							<p>FOR <span>KIDS<span></p>
+						</div>
+					</div>
+				</a>
+			</div>
+			
+			
+			<div class="featured_left">
+				<div class="filter-group clearfix">
+				
+					<div class="filter-node" data-filter='["tech","10 Cool & Clever Finds"]'>
+						<div class="inner">
+							<a href="curation_detail.html"><img src="https://images.unsplash.com/photo-1549490148-237260354488?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" /></a>
+							<em>TECH+</em>
+							<a href="#n"><h3>10 Cool & Clever Finds (tech)</h3></a>
+							<p>발휘하기 못할 아름답고 약동하다. 무엇을 그것은 그러므로 목숨이 위하여 긴지라 이것은 밝은 것이다. 굳세게 타오르고 예가 우리 용감하고 약동하다. 예수는 고동을 하는 밝은 인도하겠다는 석가는 넣는 있으랴? 트고, 청춘이 불어 용감하고 못하다 들어 듣는다. 천고에 생생하며, 얼음이 거선의 긴지라 낙원을 아름다우냐?</p>
+						</div>
+					</div>
+					
+					<div class="filter-node" data-filter='["smarthome"," vintage"]'>
+						<div class="inner">
+							<a href="curation_detail.html"><img src="https://images.unsplash.com/photo-1549554164-dbf2a3ddf41f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" /></a>
+								<em>TECH+</em>
+								<a href="#n">
+								<h3>10 Cool & Clever Finds (smarthome)</h3>
+								<p>발휘하기 못할 아름답고 약동하다. 무엇을 그것은 그러므로 목숨이 위하여 긴지라 이것은 밝은 것이다. 굳세게 타오르고 예가 우리 용감하고 약동하다. 예수는 고동을 하는 밝은 인도하겠다는 석가는 넣는 있으랴? 트고, 청춘이 불어 용감하고 못하다 들어 듣는다. 천고에 생생하며, 얼음이 거선의 긴지라 낙원을 아름다우냐?</p>
+							</a>
+						</div>
+					</div>
+					
+					<div class="filter-node" data-filter='["kitchen"," vintage"]'>
+						<div class="inner">
+							<a href="curation_detail.html"><img src="https://images.unsplash.com/photo-1549650558-eaca848e241b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" /></a>
+								<em>TECH+</em>
+								<a href="#n">
+								<h3>10 Cool & Clever Finds(kitchen)</h3>
+								<p>발휘하기 못할 아름답고 약동하다. 무엇을 그것은 그러므로 목숨이 위하여 긴지라 이것은 밝은 것이다. 굳세게 타오르고 예가 우리 용감하고 약동하다. 예수는 고동을 하는 밝은 인도하겠다는 석가는 넣는 있으랴? 트고, 청춘이 불어 용감하고 못하다 들어 듣는다. 천고에 생생하며, 얼음이 거선의 긴지라 낙원을 아름다우냐?</p>
+							</a>
+						</div>
+					</div>
+					
+					<div class="filter-node" data-filter='["geeky"," vintage"]'>
+						<div class="inner">
+							<a href="curation_detail.html"><img src="https://images.unsplash.com/photo-1549506767-edd4ca83c7f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" /></a>
+								<em>TECH+</em>
+								<a href="#n">
+								<h3>10 Cool & Clever Finds(geeky)</h3>
+								<p>발휘하기 못할 아름답고 약동하다. 무엇을 그것은 그러므로 목숨이 위하여 긴지라 이것은 밝은 것이다. 굳세게 타오르고 예가 우리 용감하고 약동하다. 예수는 고동을 하는 밝은 인도하겠다는 석가는 넣는 있으랴? 트고, 청춘이 불어 용감하고 못하다 들어 듣는다. 천고에 생생하며, 얼음이 거선의 긴지라 낙원을 아름다우냐?</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="featured_right">
+				<div class="filter-group clearfix">
+				
+					<div class="filter-node" data-filter='["tech","10 Cool & Clever Finds"]'>
+						<div class="inner">
+							<a href="curation_detail.html"><img src="https://images.unsplash.com/photo-1549651211-cc23b81e5128?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" /></a>
+							<em>TECH+</em>
+							<a href="#n"><h3>10 Cool & Clever Finds (tech)</h3></a>
+							<p>발휘하기 못할 아름답고 약동하다. 무엇을 그것은 그러므로 목숨이 위하여 긴지라 이것은 밝은 것이다. 굳세게 타오르고 예가 우리 용감하고 약동하다. 예수는 고동을 하는 밝은 인도하겠다는 석가는 넣는 있으랴? 트고, 청춘이 불어 용감하고 못하다 들어 듣는다. 천고에 생생하며, 얼음이 거선의 긴지라 낙원을 아름다우냐?</p>
+						</div>
+					</div>
+					
+					<div class="filter-node" data-filter='["smarthome"," vintage"]'>
+						<div class="inner">
+							<a href="curation_detail.html"><img src="https://images.unsplash.com/photo-1549488497-5a2119c98479?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" /></a>
+								<em>TECH+</em>
+								<a href="#n">
+								<h3>10 Cool & Clever Finds (smarthome)</h3>
+								<p>발휘하기 못할 아름답고 약동하다. 무엇을 그것은 그러므로 목숨이 위하여 긴지라 이것은 밝은 것이다. 굳세게 타오르고 예가 우리 용감하고 약동하다. 예수는 고동을 하는 밝은 인도하겠다는 석가는 넣는 있으랴? 트고, 청춘이 불어 용감하고 못하다 들어 듣는다. 천고에 생생하며, 얼음이 거선의 긴지라 낙원을 아름다우냐?</p>
+							</a>
+						</div>
+					</div>
+					
+					<div class="filter-node" data-filter='["kitchen"," vintage"]'>
+						<div class="inner">
+							<a href="curation_detail.html"><img src="https://images.unsplash.com/photo-1549482508-654ef08092a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" /></a>
+								<em>TECH+</em>
+								<a href="#n">
+								<h3>10 Cool & Clever Finds(kitchen)</h3>
+								<p>발휘하기 못할 아름답고 약동하다. 무엇을 그것은 그러므로 목숨이 위하여 긴지라 이것은 밝은 것이다. 굳세게 타오르고 예가 우리 용감하고 약동하다. 예수는 고동을 하는 밝은 인도하겠다는 석가는 넣는 있으랴? 트고, 청춘이 불어 용감하고 못하다 들어 듣는다. 천고에 생생하며, 얼음이 거선의 긴지라 낙원을 아름다우냐?</p>
+							</a>
+						</div>
+					</div>
+					
+					<div class="filter-node" data-filter='["geeky"," vintage"]'>
+						<div class="inner">
+							<a href="curation_detail.html"><img src="https://images.unsplash.com/photo-1549439548-3be724b4797e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" /></a>
+								<em>TECH+</em>
+								<a href="#n">
+								<h3>10 Cool & Clever Finds(geeky)</h3>
+								<p>발휘하기 못할 아름답고 약동하다. 무엇을 그것은 그러므로 목숨이 위하여 긴지라 이것은 밝은 것이다. 굳세게 타오르고 예가 우리 용감하고 약동하다. 예수는 고동을 하는 밝은 인도하겠다는 석가는 넣는 있으랴? 트고, 청춘이 불어 용감하고 못하다 들어 듣는다. 천고에 생생하며, 얼음이 거선의 긴지라 낙원을 아름다우냐?</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div><!--./rt_cnt-->
+  
+      </div><!--./featured-->
+  </div><!--./wrap-->
+</div><!--./layout-->
 
-            <li>
-              <a href="/featured/featured_01"><img src="https://images.unsplash.com/photo-1500051638674-ff996a0ec29e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" /></a>
-              <em>TECH+</em>
-              <a href="#n">
-                <h3>10 Cool & Clever Finds</h3>
-                <p>발휘하기 못할 아름답고 약동하다. 무엇을 그것은 그러므로 목숨이 위하여 긴지라 이것은 밝은 것이다. 굳세게 타오르고 예가 우리 용감하고 약동하다. 예수는 고동을 하는 밝은 인도하겠다는 석가는 넣는 있으랴? 트고, 청춘이 불어 용감하고 못하다 들어 듣는다. 천고에 생생하며, 얼음이 거선의 긴지라 낙원을 아름다우냐?</p>
-              </a>
-            </li>
-            
-            <li>
-              <a href="/featured/featured_01"><img src="https://images.unsplash.com/photo-1542693209-f2b4ed97f70d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" /></a>
-              <em>Cellphone</em>
-              <a href="#n">
-                <h3>SoundFlux - Dual Driver True Wireless Headphones</h3>
-                <p>두손을 그와 고행을 동산에는 청춘의 뿐이다. 수 들어 아니더면, 더운지라 과실이 풀밭에 보라. 청춘 아니한 어디 품고 심장은 그들은 산야에 이상의 사랑의 것이다. 싸인 풀밭에 목숨을 용기가 과실이 것은 기쁘며, 같지 그리하였는가? 가치를 청춘의 주며, 싹이 봄바람이다.</p>
-              </a>
-            </li>
-            
-            <li>
-              <a href="#n"><img src="https://images.unsplash.com/photo-1544894079-3b8cd8911e7c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" /></a>
-              <em>TECH+</em>
-              <a href="#n">
-                <h3>10 Cool & Clever Finds</h3>
-                <p>발휘하기 못할 아름답고 약동하다. 무엇을 그것은 그러므로 목숨이 위하여 긴지라 이것은 밝은 것이다. 굳세게 타오르고 예가 우리 용감하고 약동하다. 예수는 고동을 하는 밝은 인도하겠다는 석가는 넣는 있으랴? 트고, 청춘이 불어 용감하고 못하다 들어 듣는다. 천고에 생생하며, 얼음이 거선의 긴지라 낙원을 아름다우냐?</p>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div><!--./wrap-->
-  </div><!--./layout-->
