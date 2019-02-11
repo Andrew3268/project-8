@@ -13,7 +13,7 @@ table caption{display:none;}
 .clearfix{display:block;}
 
 body{margin:0;padding:0;}
-body{font-family: 'Noto Sans KR','맑은고딕',sans-serif;font-size:15px;color:#000;line-height:1.7;font-weight:300;letter-spacing:-0.05em;}
+body{font-family: 'Noto Sans KR','맑은고딕',sans-serif;font-size:15px;color:#000;line-height:1.7;font-weight:300;}
 @media screen and (max-width:640px){
   body{font-size:13px;font-weight:400;}
 }
