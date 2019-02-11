@@ -45,7 +45,8 @@ $(document).ready(function(){
       //메인메뉴를 열면 서브메뉴오픈 버튼이 사라짐
     $("header .gnb_open2").on("click", function(){
       $(".gadgets_wrapper main .gnb_open").hide();
-      $(".sub_nav .gnb_open").hide();      
+      $(".sub_nav .gnb_open").hide();
+      $(".featured .gnb_open").hide();      
       $("header .gnb_kbg").fadeIn(300);
       $("header .gnb_m").animate({
         left : 0
@@ -55,6 +56,7 @@ $(document).ready(function(){
     $("header .gnb_m>.gnb_close").on("click", function(){
       $(".gadgets_wrapper main .gnb_open").show();
       $(".sub_nav .gnb_open").show();
+      $(".featured .gnb_open").show();  
       $("header .gnb_kbg").fadeOut(300);
       $("header .gnb_m").animate({
         left : -800
@@ -211,7 +213,7 @@ $(document).ready(function(){
   //End 
   
   
-  //filter on featured
+  //Begin filter on featured
   var example = new DataFilterJS({
     filterGroup: '.filter-group',
     filterNode: '.filter-node',
@@ -256,9 +258,9 @@ $(document).ready(function(){
       }); // end each
     }); // end keypress
   }
+  //End filter on featured
   
-  
-  //메뉴나타내기 on featured
+  //Begin show menu on featured
   	var document_h = $(document).height();
 	//console.log(document_h);
 	$(".featured .sm_mobile").height(document_h);
@@ -282,6 +284,7 @@ $(document).ready(function(){
 			right : -800
 		},300);
 	});
+  //End show menu on featured
   
   
   
