@@ -5,7 +5,7 @@
       <a href="/"><img class="oh_logo" src="<%=asset_path 'oh_logo.jpg' %>" alt="ohigottabuythis" /></a>
 
       <div class="visual">
-        <h1><a href="/"><img src="/assets/visual.jpg" alt="ohigottabuythis" /></a></h1>
+        <h1><a href="/"><img src="/assets/visual_01.jpg" alt="ohigottabuythis" /></a></h1>
       </div>
 
       <ul class="clearfix">
@@ -20,7 +20,7 @@
       <div class="membership">
         <ul class="clearfix">
           <% if user_signed_in? %>
-          <li>Hello, <%= current_user.name %></li>
+           <p>Hello, <%= current_user.name %><p>
            <li><%= link_to "LOG OUT", destroy_user_session_path, method: :delete %></li>
           <% else %>
            <li><%= link_to "SIGN IN", new_user_session_path %></li>
