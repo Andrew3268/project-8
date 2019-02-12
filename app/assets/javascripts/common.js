@@ -32,12 +32,6 @@ $(document).ready(function(){
     }
   //End
 
-  //Begin show more on index&gadgets page
-  $('.card-nav button').on('click', function(){
-    $(this).parent().toggleClass('is-active');
-  });
-  //End
-
   //Begin show mobile menu
     var document_hi = $(document).height();
     //console.log(document_hi);
@@ -109,7 +103,14 @@ $(document).ready(function(){
       },300);
     });
     
-    $(".gadgets_wrapper main .gnb_kbg").on("click", function(){
+    $(".gadgets_wrapper main .gnb_close").on("click", function(){
+      $(".gadgets_wrapper main .gnb_kbg").fadeOut(300);
+      $(".gadgets_wrapper main section#filter").animate({
+        right : -800
+      },300);
+    });
+    
+     $(".gadgets_wrapper main .gnb_kbg").on("click", function(){
       $(".gadgets_wrapper main .gnb_kbg").fadeOut(300);
       $(".gadgets_wrapper main section#filter").animate({
         right : -800
@@ -185,32 +186,30 @@ $(document).ready(function(){
       });
   //End
 
-
-  function fun_nav(fun_name){
-    $(fun_name).each(function(){
-     if ($(this).attr("href") == window.location.pathname){
-          $(this).addClass("active");
-     }
-   });
-  }
-  
-  //Begin Highlight All Links To Current Page for deals mobile
-  $(function(){
-     fun_nav(".sub_nav .gnb_m>ul>li>a");
-  });
-  //End 
-  
-  //Begin Highlight All Links To Current Page for deals mobile
-  $(function(){
-     fun_nav(".sub_nav .sub_nav_pc>ul>li>a");
-  });
-  //End 
-  
-  //Begin Highlight All Links To Current Page for deals mobile
-  $(function(){
-     fun_nav("header .gnb_pc>ul>li>a");
-  });
-  //End 
+  //Begin js for Deals page
+    function fun_nav(fun_name){
+      $(fun_name).each(function(){
+       if ($(this).attr("href") == window.location.pathname){
+            $(this).addClass("active");
+       }
+     });
+    }
+    //Begin Highlight All Links To Current Page for deals mobile
+    $(function(){
+       fun_nav(".sub_nav .gnb_m>ul>li>a");
+    });
+    //End 
+    //Begin Highlight All Links To Current Page for deals pc
+    $(function(){
+       fun_nav(".sub_nav .sub_nav_pc>ul>li>a");
+    });
+    //End 
+    //Begin Highlight All Links To Current Page for Main Menu
+    $(function(){
+       fun_nav("header .gnb_pc>ul>li>a");
+    });
+    //End 
+  //End
   
   
   //Begin filter on featured
@@ -218,7 +217,7 @@ $(document).ready(function(){
     filterGroup: '.filter-group',
     filterNode: '.filter-node',
     filterButtonGroup: '.filter-search',
-    transitionSpeed: '0.5s'
+    transitionSpeed: '0'
   });
 
   function DataFilterJS(config){
@@ -260,6 +259,7 @@ $(document).ready(function(){
   }
   //End filter on featured
   
+  
   //Begin show menu on featured
   	var document_h = $(document).height();
 	//console.log(document_h);
@@ -285,8 +285,6 @@ $(document).ready(function(){
 		},300);
 	});
   //End show menu on featured
-  
-  
   
   
 

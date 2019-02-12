@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get 'gift_guide/gift_guide_01'
   
   get 'blog/index'
+  get 'blog/blog_01'
 
   get 'featured/index'
   get 'featured/featured_01'
