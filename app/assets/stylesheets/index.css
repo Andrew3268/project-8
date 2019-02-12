@@ -12,13 +12,17 @@
 .gadgets .card_wrap .card-body .btn{margin:10px 0;display:inline-block;}
 .gadgets .card_wrap .card-body .btn>em{float:left;font-size:17px;background:#000;color:#fff;padding:3px 20px;border:1px solid #000;line-height:20px;}
 .gadgets .card_wrap .card-body .btn>a{float:left;text-decoration:none;color:#000;font-size:20px;border:1px solid #000;padding:3px 20px;line-height:20px;}
+.gadgets .card_wrap .card-body .admin{margin-top:-20px;}
+.gadgets .card_wrap .card-body .admin>em>a{text-decoration:none;color:#fff;}
 .gadgets .card_wrap .card-header img{display:block;width:100%;border-radius:10px;}
 .gadgets .card_wrap .with-photo
 .gadgets .card_wrap .card-header{height:208px;padding:0;overflow:hidden;}
+.gadgets .card_wrap .start{position:absolute;top:-20px;right:50px;}
+.gadgets .card_wrap .start img{width:30px;}
+/*
 .gadgets .card_wrap .card-nav button .nav-icon, 
 .gadgets .card_wrap .card-nav ul{transition: all .5s ease;}
 .gadgets .card_wrap .card-nav{position:absolute;top:-20px;right:15px;}
-.gadgets .card_wrap .start{position:absolute;top:-20px;right:50px;}
 .gadgets .card_wrap .admin{position:absolute;top:-20px;right:85px;}
 .gadgets .card_wrap .card-footer ul{}
 .gadgets .card_wrap .card-footer ul li{float:left;}
@@ -54,7 +58,7 @@
 .gadgets .card-nav.is-active button.nav-dots .icon-one {margin-left: 1px;}
 .gadgets .card-nav.is-active button.nav-dots .icon-three {margin-left: -17px;}
 .gadgets .card-nav.is-active ul {top: 48px;visibility: visible;opacity: 1;}
-
+*/
 @media screen and (max-width:640px){
   .gadgets{margin:80px 0;}
   .gadgets .card_wrap .card-header{padding:5px;}
