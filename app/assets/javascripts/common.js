@@ -149,7 +149,40 @@ $(document).ready(function(){
   }, getRandomArbitrary(100, 500));
 //End
   
-  
+  //Begin show side menu on deals
+    var document_deals = $(document).height();
+      //console.log(document_deals);
+      $(".sub_nav .gnb_m").height(document_deals);
+      
+      $(".sub_nav .gnb_open").on("click", function(){
+        $(".sub_nav .gnb_kbg").fadeIn(300);
+        $(".sub_nav .gnb_m").animate({
+          right : 0
+        },300);
+      });
+      
+      $(".sub_nav .gnb_close").on("click", function(){
+        $(".sub_nav .gnb_kbg").fadeOut(300);
+        $(".sub_nav .gnb_m").animate({
+          right : -800
+        },300);
+      });
+
+      $(".sub_nav .gnb_open_b").on("click", function(){
+        $(".sub_nav .gnb_kbg").fadeIn(300);
+        $(".sub_nav .gnb_m").animate({
+          right : 0
+        },300);
+      });
+      
+      $(".sub_nav .gnb_close").on("click", function(){
+        $(".sub_nav .gnb_kbg").fadeOut(300);
+        $(".sub_nav .gnb_m").animate({
+          right : -1000
+        },300);
+      });
+  //End
+
   
 
 });

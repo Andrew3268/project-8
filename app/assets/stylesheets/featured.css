@@ -14,7 +14,7 @@
 .cu_sub_nav ul>li>a.active{color:#000;font-weight:500;border-bottom:2px solid;}
 
 @media screen and (max-width:640px){
-  .cu_sub_nav{margin-top:100px;}
+  .cu_sub_nav{margin-top:60px;}
   .cu_sub_nav ul>li{float:left;width:33.33%;text-align:center;}
 }
 
@@ -74,7 +74,7 @@
 	.featured{margin:30px 0 0 0;}
 	.featured .sm_pc{display:none;}
 	.featured .sm_mobile{display:block;height:200px;background:#fff;position:fixed;right:-800px;top:0;width:70%;z-index:303;}
-	.featured .gnb_open{display:block;position:fixed;right:0;top:7px;z-index:301;margin:0 5%}
+	.featured .gnb_open{display:block;position:fixed;right:0;top:2px;z-index:301;margin:0 5%}
 	.featured .gnb_open img{width:40px;height:40px;}
 	.featured .gnb_close{display:block;position:absolute;right:0;top:12px;z-index:303;margin:0 5%;}
 	.featured .gnb_close img{width:40px;height:40px;}
