@@ -18,10 +18,12 @@
   .codes .lt_cnt .sort_lt ul li{float:left;width:48%;margin:1%;}
   .codes .lt_cnt .sort_lt ul li a{font-weight:bold;text-decoration:none;color:#fff;display:block;background:#000;text-align:center;padding:10px;}
   .codes .rt_cnt .sort_rt{}
-  .codes .rt_cnt .sort_rt ul{}
-  .codes .rt_cnt .sort_rt ul li{float:left;width:100px;margin-right:15px;}
-  .codes .rt_cnt .sort_rt ul li a{text-decoration:none;background:#000;color:#fff;padding:8px 20px;text-align:center;display:block;}
- 
+  .codes .rt_cnt .sort_rt ul{float:right;}
+  .codes .rt_cnt .sort_rt ul p{color:#fff;border-bottom:1px solid #fff;margin-bottom:5px;}
+  .codes .rt_cnt .sort_rt ul li{float:left;width:60px;margin-right:15px;}
+  .codes .rt_cnt .sort_rt ul li a{border-radius:5%;border:2px solid;text-decoration:none;background:#fff;color:#000;padding:5px 0;text-align:center;display:block;}
+  .codes .rt_cnt .sort_rt ul li a:hover{background:#000;color:#fff;}
+
   .codes .card_wrap{margin:20px 0 0 0;}
   .codes .card_wrap .card{border-bottom:1px solid #ccc;margin:0 0 15px 0;padding-bottom:10px;}
   .codes .card_wrap .card .image_box{float:left;width:20%;height:150px;padding:1.5%;}
@@ -87,12 +89,12 @@
   .coupons .coupons_wrap{margin:20px 0 0 0;}
   .coupons .coupons_wrap .card{border-bottom:1px solid #ccc;margin:0 0 15px 0;padding-bottom:10px;}
   .coupons .coupons_wrap .card .info_box{border-right:1px solid #ccc;float:left;width:20%;height:100px;padding:1.5% 0;margin:2% 1.5%;text-align:center;background:#fff;color:#000;}
-  .coupons .coupons_wrap .card .info_box p{font-size:30px;font-weight:bold;line-height:1.2;margin:3px 20px;padding:10px;}
+  .coupons .coupons_wrap .card .info_box p{font-size:30px;font-weight:bold;line-height:1.2;margin:3px 20px;}
   .coupons .coupons_wrap .card .info_box em{}
   .coupons .coupons_wrap .card .info_box .img_box{height:100px;padding:0;}
   .coupons .coupons_wrap .card .info_box img{width:100%;height:100%;object-fit:contain;}
+  .coupons .coupons_wrap .card .info_box strong{background:#000;color:#fff;border-radius:10px;padding:0 10px;display:block;width:50%;margin:5px auto;}
   .coupons .coupons_wrap .card .inner{border-right:1px solid #ccc;float:left;width:57%;padding:1.5%;}
-  .coupons .coupons_wrap .card .inner strong{background:#000;color:#fff;border-radius:10px;padding:0 10px;}
   .coupons .coupons_wrap .card .inner p{font-size:17px;font-weight:bold;line-height:1.2;margin-top:5px;}
   .coupons .coupons_wrap .card .inner p>a{text-decoration:none;color:#000;}
   .coupons .coupons_wrap .card .inner em{display:block;margin:7px 0;}
@@ -110,14 +112,14 @@
   .coupons .coupons_wrap{column-width:170px;column-gap:5px;}
   .coupons .coupons_wrap .card{border-radius:5px;display:inline-block;margin:0;margin-bottom:15px;padding:5px;box-shadow: 1px 1px 3px rgba(0,0,0,0.5);text-align:center;}
   .coupons .coupons_wrap .card .info_box{float:none;width:100%;padding:10px 0;text-align:center;background:#fff;color:#000;}
-  .coupons .coupons_wrap .card .info_box p{font-size:25px;font-weight:500;line-height:1.2;margin:3px 20px;padding:10px;}
+  .coupons .coupons_wrap .card .info_box p{font-size:25px;font-weight:500;line-height:1.2;margin:3px 20px;}
   .coupons .coupons_wrap .card .inner p{font-weight:600;}
   .coupons .coupons_wrap .card .inner p>a{text-decoration:none;color:#000;}
   .coupons .coupons_wrap .card .info_box em{}
   .coupons .coupons_wrap .card .info_box .img_box{height:auto;padding:0;}
   .coupons .coupons_wrap .card .info_box img{width:100%;height:auto;}
+  .coupons .coupons_wrap .card .info_box strong{background:#000;color:#fff;border-radius:10px;padding:0 10px;}
   .coupons .coupons_wrap .card .inner{float:none;width:100%;padding:0;}
-  .coupons .coupons_wrap .card .inner strong{background:#000;color:#fff;border-radius:10px;padding:0 10px;}
   .coupons .coupons_wrap .card .inner p{font-size:15px;line-height:1.2;margin-top:10px;word-break:break-all;}
   .coupons .coupons_wrap .card .inner em{display:block;margin:10px 0;}
   .coupons .coupons_wrap .card .deal_btn{float:none;width:100%;padding:0;margin:10px 0;}
