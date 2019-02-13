@@ -10,8 +10,18 @@
           <h2>Promotion Codes</h2>
           <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>-->
           
+          <div class="note">
+            <ul>
+              <li>Deals & pricing may change or expire at anytime.</li>
+              <li>Some of promotion codes can expire fast.</li>
+              <li>Free Shipping: Prime or $35+ of all other eligible items.<a href="#n">(What's PRIME?)</a></li>
+              <li>Our website contains affiliate link which means that if you click on one of the product links and buy we’ll receive a small commission. This help supports us and allows us to continue to keep finding and sharing good deals.</li>
+            </ul>
+          </div>
+
           <div class="lt_cnt_box">
-            <div class="sortby">
+
+            <div class="sortby clearfix">
               <p>Sort by:</p>
               <ul>
                 <li><a href="#" class="pure-button sort1">$$$</li>
@@ -35,16 +45,16 @@
                   <a href="#n">SHOW LAST PROMO CODES</a>
                   <ul>
                     <li><p>Last 7 days promo codes</p></li>
-                    <li><a href="#n">Feb. 10. 2019</a></li>
-                    <li><a href="#n">Feb. 9. 2019</a></li>
-                    <li><a href="#n">Feb. 8. 2019</a></li>
-                    <li><a href="#n">Feb. 7. 2019</a></li>
-                    <li><a href="#n">Feb. 6. 2019</a></li>
-                    <li><a href="#n">Feb. 5. 2019</a></li>
-                    <li><a href="#n">Feb. 4. 2019</a></li>
+                    <li><a href="#n">Feb. 10. 2019 <span>(expration:02/15 ~ 03/15)</span></a></li>
+                    <li><a href="#n">Feb. 09. 2019  <span>(expration:02/15 ~ 03/15)</span></a></li>
+                    <li><a href="#n">Feb. 08. 2019</a></li>
+                    <li><a href="#n">Feb. 07. 2019</a></li>
+                    <li><a href="#n">Feb. 06. 2019</a></li>
+                    <li><a href="#n">Feb. 05. 2019</a></li>
+                    <li><a href="#n">Feb. 04. 2019</a></li>
                   </ul>
-                </li>
               </ul>
+                </li>
             </div><!--./toggle-->
           </div><!--../lt_cnt_box-->
         </div><!--./lt_cnt-->
@@ -60,6 +70,7 @@
               </div>
               <div class="inner">
                 <span class="regular"><em>15% OFF +</em> free shipping</span>
+                
                 <p><a target="_blank" href="https://amzn.to/2IaH1lI">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a></p>
                 <div class="code_high">
                   <p><span>Take <strong>15% off at $9.99</strong> using code:15K434VD</span></p>
@@ -159,19 +170,5 @@
       </div><!--./warp-->
     </div><!--./codes-->
   </div><!--./layout-->
-  
-<script>
-  $(function () {
-    var offset = $(".codes .lt_cnt .lt_cnt_box").offset();
-    var topPadding = 100;
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > offset.top) {
-            $(".codes .lt_cnt .lt_cnt_box").addClass("on");
 
-        } else {
-            $(".codes .lt_cnt .lt_cnt_box").removeClass("on");
-
-          };
-      });
-  });
-</script>
+<%= render(:partial => 'codes', :handlers => [:erb], :formats => [:js]) %>

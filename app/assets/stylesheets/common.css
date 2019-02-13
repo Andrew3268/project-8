@@ -1,4 +1,5 @@
-@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+/*@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);*/
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 h1,h2,h3,h4,h5,h6,p,ul,li,address,form,fieldset,legend,input,button,dl,dt,dd,table,thead,tbody,tfoot,tr,th,td{margin:0;padding:0;font-family:inherit;}
 /*기본여백 삭제, font-family:inherit;는 특정 태그는 body에서 지정한 서체를 상속받지 못함. 그래서 강제로 상속받도록 지정  */
 a img{border:0;}/* a태그로 감싼 이미지의 파란 테두리 삭제 (ie9-10) */
@@ -13,7 +14,7 @@ table caption{display:none;}
 .clearfix{display:block;}
 
 body{margin:0;padding:0;}
-body{font-family: 'Noto Sans KR','맑은고딕',sans-serif;font-size:15px;color:#000;line-height:1.7;font-weight:300;}
+body{/*font-family: 'Noto Sans KR','맑은고딕',sans-serif;*/font-family: 'Noto Sans', sans-serif;font-size:15px;color:#000;line-height:1.5;font-weight:300;}
 @media screen and (max-width:640px){
   body{font-size:13px;font-weight:400;}
 }
@@ -133,7 +134,7 @@ header .gnb_m,header .gnb_open2{display:none;}
 .sub_nav .sub_nav_pc>ul{}
 .sub_nav .sub_nav_pc>ul>li{float:left;width:100px;text-align:center;}
 .sub_nav .sub_nav_pc>ul>li>a{text-decoration:none;color:#000;font-size:15px;display:block;font-weight:400;}
-.sub_nav .sub_nav_pc>ul>li>a.active{color:#000;font-weight:500;border-bottom:2px solid #000;}
+.sub_nav .sub_nav_pc>ul>li>a.active{color:#000;font-weight:bold;border-bottom:2px solid #000;}
 .sub_nav .gnb_open,
 .sub_nav .gnb_open_b,
 .sub_nav .gnb_m,
@@ -197,17 +198,22 @@ header .gnb_m,header .gnb_open2{display:none;}
 .common_layout .lt_cnt h2{border-bottom:2px solid #000;padding-bottom:3px;margin-bottom:10px;}
 .common_layout .rt_cnt{float:left;width:73%;}
 .common_layout .rt_cnt h2{border-bottom:2px solid #000;padding-bottom:3px;margin-bottom:10px;}
+.common_layout .lt_cnt .note{margin-bottom:20px;padding:0 17px;}
+.common_layout .lt_cnt .note>ul>li{list-style:circle;font-size:13px;color:#3d3d3d;}
+.common_layout .lt_cnt .note>ul>li>a{color:#08f;text-decoration:none;}
 
 @media screen and (max-width:640px){
   .common_layout{margin:20px 0 0 0;}
   .common_layout .lt_cnt{float:none;width:100%;margin:0 0 30px 0;}
   .common_layout .rt_cnt{float:none;width:100%;}
+  .common_layout .lt_cnt .note{margin-bottom:10px;}
 }
 
 @media screen and (min-width:641px) and (max-width:1199px){
   .common_layout{margin:30px 0 0 0;}
   .common_layout .lt_cnt{float:none;width:100%;margin:0 0 30px 0;}
   .common_layout .rt_cnt{float:none;width:100%;}
+  .common_layout .lt_cnt .note{margin-bottom:10px;}
 }
 
 

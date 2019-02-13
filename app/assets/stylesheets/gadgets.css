@@ -14,7 +14,7 @@
 .gadgets_wrapper main .gnb_open_b,
 .gadgets_wrapper main .gnb_close{display:none;}
 
-@media screen and (max-width:640px){
+@media screen and (max-width:680px){
   .gadgets_wrapper{margin-top:100px;}
   .gadgets_wrapper main #filter{position:fixed;right:-800px;top:0;width:100%;z-index:302;}
   .gadgets_wrapper main #filter.on{top:0;}
@@ -31,7 +31,7 @@
   .gadgets_wrapper main .gnb_close img{width:50px;height:50px;}
 }
 
-@media screen and (min-width:641px) and (max-width:1199px){
+@media screen and (min-width:681px) and (max-width:1199px){
   .gadgets_wrapper{margin-top:180px;}
   .gadgets_wrapper main #filter{position:fixed;right:-800px;top:0;width:50%;z-index:302;}
   .gadgets_wrapper main #filter.on{top:0;}
@@ -110,7 +110,7 @@
 .on_gadgets .card-nav.is-active button.nav-dots .icon-three {margin-left: -17px;}
 .on_gadgets .card-nav.is-active ul {top: 48px;visibility: visible;opacity: 1;}
 */
-@media screen and (max-width:640px){
+@media screen and (max-width:680px){
   .on_gadgets{margin:80px 0;width:100%;}
   .on_gadgets .card_wrap .card-header{padding:5px;}
   .on_gadgets .card_wrap .card-body{padding:10px;}
@@ -120,7 +120,7 @@
   .on_gadgets .card_wrap .start{top:-25px;}
 }
 
-@media screen and (min-width:641px) and (max-width:1199px){
+@media screen and (min-width:681px) and (max-width:1199px){
   .on_gadgets{margin:80px 0;width:100%;}
   .on_gadgets .card_wrap .card-header{padding:5px;}
   .on_gadgets .card_wrap .card-body{padding:10px;}

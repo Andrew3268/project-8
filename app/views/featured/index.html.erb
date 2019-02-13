@@ -21,10 +21,11 @@
     			
     			<button class="gnb_open"><img src="<%=asset_path 'open_black.png' %>" alt="모바일 메뉴 열기" /></button>
     			<div class="sm_pc">
-    				<div class="search_bar">
-    					<input type="text" class="form-control" placeholder="Search...">
-    					<img src="<%=asset_path 'search.png' %>" alt="" />
-    				</div>
+    				<!--<div class="search_bar">-->
+    				<!--	<input type="text" class="form-control" placeholder="Search...">-->
+    				<!--	<img src="<%=asset_path 'search.png' %>" alt="" />-->
+    				<!--</div>-->
+
     				<ul class="filter-search">
     				  <li><button class="filter-button btn btn-md btn-primary" data-filter="*">All Featured</button></li>
     				  <li><button class="filter-button btn btn-md white-text" data-filter="tech">Tech+</button></li>
@@ -182,20 +183,8 @@
   </div><!--./wrap-->
 </div><!--./layout-->
 
-<script>
-  $(function () {
-    var offset = $(".featured .sm_pc").offset();
-    var topPadding = 100;
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > offset.top) {
-            $(".featured .sm_pc").addClass("on");
+<%= render(:partial => 'featured', :handlers => [:erb], :formats => [:js]) %>
 
-        } else {
-            $(".featured .sm_pc").removeClass("on");
 
-          };
-      });
-  });
-</script>
 
 
