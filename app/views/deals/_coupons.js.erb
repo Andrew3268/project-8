@@ -52,14 +52,14 @@
 
     //Begin sticky&following sidebar
     $(function () {
-      var offset = $(".coupons .lt_cnt .lt_cnt_box").offset();
+      var offset = $(".coupons .rt_cnt .cnt_box").offset();
       var topPadding = 100;
       $(window).scroll(function () {
-          if ($(window).scrollTop() > 800) {
-              $(".coupons .lt_cnt .lt_cnt_box").addClass("on");
+          if ($(window).scrollTop() > 700) {
+              $(".coupons .rt_cnt .cnt_box").addClass("on");
   
           } else {
-              $(".coupons .lt_cnt .lt_cnt_box").removeClass("on");
+              $(".coupons .rt_cnt .cnt_box").removeClass("on");
   
             };
         });

@@ -93,8 +93,8 @@ $(document).ready(function(){
 
   
   //Begin highlight menu
-    function fun_nav(fun_name){
-      $(fun_name).each(function(){
+    function highlight_nav(highlight){
+      $(highlight).each(function(){
        if ($(this).attr("href") == window.location.pathname){
             $(this).addClass("active");
        }
@@ -102,53 +102,21 @@ $(document).ready(function(){
     }
     //Begin Highlight All Links To Current Page for deals mobile
     $(function(){
-       fun_nav(".sub_nav .gnb_m>ul>li>a");
+       highlight_nav(".sub_nav .gnb_m>ul>li>a");
     });
     //End 
     //Begin Highlight All Links To Current Page for deals pc
     $(function(){
-       fun_nav(".sub_nav .sub_nav_pc>ul>li>a");
+       highlight_nav(".sub_nav .sub_nav_pc>ul>li>a");
     });
     //End 
     //Begin Highlight All Links To Current Page for Main Menu
     $(function(){
-       fun_nav("header .gnb_pc>ul>li>a");
+       highlight_nav("header .gnb_pc>ul>li>a");
     });
     //End 
   //End
-  
 
- //Begin Loading page
-  function getRandomArbitrary(min, max) {
-  return Math.random() * (max - min) + min;
-  }
-  
-  // super simple router - go to page specified in hash, otherwise go to "default"
-  function router(route) {
-    var pageName = route ? route : $('.default.page').attr('data-page-name');
-    var $page = $('[data-page-name="' + pageName + '"]');
-    $('.page').css('display', 'none');
-    $('[data-page]').removeClass('active');
-    $('[data-page="' + pageName + '"]').addClass('active');
-    $page.css('display', 'block');
-  }
-  router();
-  
-  // fake loader
-  var progress = 0;
-  var fakeLoaderInterval = window.setInterval(function () {
-    var $lp = $('.loading-progress');
-    progress = progress + getRandomArbitrary(10, 25);
-    $lp.css('transform', 'translateX(' + progress + '%)');
-  
-    if (progress >= 75) {
-      window.clearInterval(fakeLoaderInterval);
-      $lp.css('transform', 'translateX(100%)');
-      setTimeout(function () {return $('.loading').css('transform', 'translateY(calc(100% + 10px))');}, 400);
-    }
-  }, getRandomArbitrary(100, 500));
-//End
-  
   //Begin show side menu on deals
     var document_deals = $(document).height();
       //console.log(document_deals);
@@ -181,6 +149,36 @@ $(document).ready(function(){
           right : -1000
         },300);
       });
+  //End
+  
+  //Begin Loading page
+  function getRandomArbitrary(min, max) {
+  return Math.random() * (max - min) + min;
+  }
+  // super simple router - go to page specified in hash, otherwise go to "default"
+  function router(route) {
+    var pageName = route ? route : $('.default.page').attr('data-page-name');
+    var $page = $('[data-page-name="' + pageName + '"]');
+    $('.page').css('display', 'none');
+    $('[data-page]').removeClass('active');
+    $('[data-page="' + pageName + '"]').addClass('active');
+    $page.css('display', 'block');
+  }
+  router();
+  
+  // fake loader
+  var progress = 0;
+  var fakeLoaderInterval = window.setInterval(function () {
+    var $lp = $('.loading-progress');
+    progress = progress + getRandomArbitrary(10, 25);
+    $lp.css('transform', 'translateX(' + progress + '%)');
+  
+    if (progress >= 75) {
+      window.clearInterval(fakeLoaderInterval);
+      $lp.css('transform', 'translateX(100%)');
+      setTimeout(function () {return $('.loading').css('transform', 'translateY(calc(100% + 10px))');}, 400);
+    }
+  }, getRandomArbitrary(100, 500));
   //End
 
   

@@ -41,14 +41,14 @@
   
   //Begin sticky&following sidebar
     $(function () {
-      var offset = $(".codes .lt_cnt .lt_cnt_box").offset();
+      var offset = $(".codes .rt_cnt .sort_box").offset();
       var topPadding = 100;
       $(window).scroll(function () {
-          if ($(window).scrollTop() > 800) {
-              $(".codes .lt_cnt .lt_cnt_box").addClass("on");
+          if ($(window).scrollTop() > 700) {
+              $(".codes .rt_cnt .sort_box").addClass("on");
   
           } else {
-              $(".codes .lt_cnt .lt_cnt_box").removeClass("on");
+              $(".codes .rt_cnt .sort_box").removeClass("on");
   
             };
         });
@@ -73,4 +73,7 @@
     }
   });
   //End
+  
+
+
 </script>
