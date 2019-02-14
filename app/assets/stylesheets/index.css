@@ -1,5 +1,5 @@
 .gadgets{margin:270px 0;}
-.index_gad{margin:30px 0;}
+/*.index_gad{margin:30px 0;}*/
 .gadgets .card_wrap{column-width:300px;column-gap:10px;}
 .gadgets .card_wrap .card{margin:10px 1%;;position: relative;border-radius:10px;background: #fff; overflow: hidden;display:inline-block;}
 .gadgets .card_wrap .card, 
@@ -15,7 +15,7 @@
 .gadgets .card_wrap .card-body .admin{margin-top:-20px;}
 .gadgets .card_wrap .card-body .admin>em>a{text-decoration:none;color:#fff;}
 .gadgets .card_wrap .card-header img{display:block;width:100%;border-radius:10px;}
-.gadgets .card_wrap .with-photo
+/*.gadgets .card_wrap .with-photo*/
 .gadgets .card_wrap .card-header{height:208px;padding:0;overflow:hidden;}
 .gadgets .card_wrap .start{position:absolute;top:-20px;right:50px;}
 .gadgets .card_wrap .start img{width:30px;}
