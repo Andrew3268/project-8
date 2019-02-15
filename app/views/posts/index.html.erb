@@ -25,9 +25,11 @@
               
               <section class="card-body">
                 
-                <div class="js-overlay-start start" data-url= "<%= gadget.gad_youtube %>">
-                  <button><img src="<%=asset_path 'youtube_02.png' %>" alt="" /></button>
-                </div>
+                <% if gadget.gad_youtube.present? %>
+                  <div class="js-overlay-start start" data-url= "<%= gadget.gad_youtube %>">
+                    <button><img src="<%=asset_path 'youtube_02.png' %>" alt="" /></button>
+                  </div>
+                <% end %>
 
                 <h4><a target="_blank" href="<%= gadget.gad_link %>"><%= gadget.gad_title %></a></h4>
                 <p><%= gadget.gad_intro %></p>
@@ -43,83 +45,15 @@
             </div>
           <% end %>
           
-          <div class="card with-photo">
-            <div class="card-header">
-            <img src="https://images.unsplash.com/photo-1547479117-da9abbff3fa0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
-            </div>
-            
-            <section class="card-body">
-
-            <div class="js-overlay-start start" data-url= "https://www.youtube.com/embed/NEdhfdmoPnM?rel=0&showinfo=0&autoplay=1">
-              <button><img src="<%=asset_path 'youtube_02.png' %>" alt="" /></button>
-            </div>
-            
-            <h4>This is a Headline</h4>
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas libero sit amet quam egestas semper.</p>
-            <div class="btn clearfix">
-              <em>$100.00</em><a href="#n">Buy Now</a>
-            </div>
-            </section>
-          </div>
           
-          <div class="card with-photo">
-            <div class="card-header">
-            <img src="https://images.unsplash.com/photo-1529910260185-8b793acb7ce0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
-            </div>
-            
-            <section class="card-body">
-            
-            <div class="js-overlay-start start" data-url= "https://www.youtube.com/embed/NEdhfdmoPnM?rel=0&showinfo=0&autoplay=1">
-              <button><img src="<%=asset_path 'youtube_02.png' %>" alt="" /></button>
-            </div>
-            
-            <h4>This is a Headline</h4>
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas libero sit amet quam egestas semper.</p>
-            <a href="">View details</a>
-            </section>
-          </div>
-          
-          <div class="card with-photo">
-            <div class="card-header">
-            <img src="https://images.unsplash.com/photo-1511385278-5432b00777ed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
-            </div>
-            
-            <section class="card-body">
-            
-            <div class="js-overlay-start start" data-url= "https://www.youtube.com/embed/NEdhfdmoPnM?rel=0&showinfo=0&autoplay=1">
-              <button><img src="<%=asset_path 'youtube_02.png' %>" alt="" /></button>
-            </div>
-            
-            <h4>This is a Headline</h4>
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas libero sit amet quam egestas semper.</p>
-            <a href="">View details</a>
-            </section>
-          </div>
-          
-          <div class="card with-photo">
-            <div class="card-header">
-            <img src="https://images.unsplash.com/photo-1534866845581-63b36900fca1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
-            </div>
-            
-            <section class="card-body">
-            
-            <div class="js-overlay-start start" data-url= "https://www.youtube.com/embed/NEdhfdmoPnM?rel=0&showinfo=0&autoplay=1">
-              <button><img src="<%=asset_path 'youtube_02.png' %>" alt="" /></button>
-            </div>
-            
-            <h4>This is a Headline</h4>
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas libero sit amet quam egestas semper.</p>
-            <a href="">View details</a>
-            </section>
-          </div>
-          
+          <!--
           <div class="card with-photo">
             <div class="card-header">
             <img src="https://images.unsplash.com/photo-1527754525882-563050c6618c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
             </div>
             
             <section class="card-body">
-            <!--
+           
             <nav class="card-nav">
               <button class="nav-dots">
               <span class="nav-icon icon-one"></span>
@@ -132,7 +66,7 @@
               <li><a href="">Link Three</a></li>
               </ul>
             </nav>
-            -->
+            
             <div class="js-overlay-start start" data-url= "https://www.youtube.com/embed/NEdhfdmoPnM?rel=0&showinfo=0&autoplay=1">
               <button><img src="<%=asset_path 'youtube_02.png' %>" alt="" /></button>
             </div>
@@ -142,7 +76,7 @@
             <a href="">View details</a>
             </section>
           </div>
-          
+          -->
         </div>
 
     </div><!--./wrap-->

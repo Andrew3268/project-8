@@ -41,14 +41,14 @@
   
   //Begin sticky&following sidebar
     $(function () {
-      var offset = $(".codes .rt_cnt .sort_box").offset();
+      var offset = $(".codes .lt_cnt .lt_sort_box").offset();
       var topPadding = 100;
       $(window).scroll(function () {
           if ($(window).scrollTop() > 700) {
-              $(".codes .rt_cnt .sort_box").addClass("on");
+              $(".codes .lt_cnt .lt_sort_box").addClass("on");
   
           } else {
-              $(".codes .rt_cnt .sort_box").removeClass("on");
+              $(".codes .lt_cnt .lt_sort_box").removeClass("on");
   
             };
         });

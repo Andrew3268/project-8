@@ -10,16 +10,16 @@
   .codes .lt_cnt .toggle>ul>li>ul>li{padding:5px 10px;list-style: decimal;}
   .codes .lt_cnt .toggle>ul>li>ul>li>a{text-decoration:none;color:#000;display:block;}
   .codes .lt_cnt .toggle>ul>li>ul>li>a>span{font-size:13px;}
+
+  .codes .lt_cnt .lt_sort_box{display:none;}
+  .codes .lt_cnt .lt_sort_box.on{display:block;position:fixed;top:80px;width:270px;}
+  .codes .lt_cnt .lt_sort_box p{border-bottom:1px solid;}
+  .codes .lt_cnt .lt_sort_box ul li{float:left;width:100%;margin:1% 0;border:1px solid;border-radius:10px;}
+  .codes .lt_cnt .lt_sort_box ul li a{border-radius:10px;text-decoration:none;color:#000;display:block;background:#fff;text-align:center;padding:5px;}
   
   .codes .rt_cnt .sort_box{margin-bottom:20px;}
-  .codes .rt_cnt .sort_box p{display:none;}
-  .codes .rt_cnt .sort_box.on{display:block;position:fixed;top:80px;left:75px;width:270px;}
-  .codes .rt_cnt .sort_box.on p{display:block;font-size:20px;border-bottom:1px solid;margin-bottom:10px;}
-  .codes .rt_cnt .sort_box.on ul li{width:100%;margin:1%;}
-  .codes .rt_cnt .sort_box ul{}
   .codes .rt_cnt .sort_box ul li{float:left;width:100px;margin:0 5px;border:1px solid;border-radius:10px;}
   .codes .rt_cnt .sort_box ul li a{border-radius:10px;text-decoration:none;color:#000;display:block;background:#fff;text-align:center;padding:5px;}
-  .codes .rt_cnt .sort_box ul li a.active{background:#000;color:#fff;}
 
   .codes .card_wrap{margin:20px 0 0 0;}
   .codes .card_wrap .card{border-bottom:1px solid #ccc;margin:0 0 15px 0;padding-bottom:10px;}
@@ -46,12 +46,14 @@
   .codes .lt_cnt .toggle>ul>li>ul{display:none;list-style:decimal;padding-left:17px;}
   .codes .lt_cnt .toggle>ul>li>ul>li{padding:5px 10px;list-style: decimal;}
   .codes .lt_cnt .toggle>ul>li>ul>li>a{text-decoration:none;color:#000;display:block;}
+
   .codes .rt_cnt .sort_box{margin:10px 0;}
   .codes .rt_cnt .sort_box.on,
   .codes .rt_cnt .sort_box p{display:none;}
   .codes .rt_cnt .sort_box ul{}
   .codes .rt_cnt .sort_box ul li{float:left;width:19%;margin:0.5%;}
   .codes .rt_cnt .sort_box ul li a{border-radius:10px;text-decoration:none;color:#fff;display:block;background:#000;text-align:center;padding:5px;}
+ 
   .codes .card_wrap{column-width:170px;column-gap:5px;}
   .codes .card_wrap .card{display:inline-block;margin:0;margin-bottom:15px;padding:5px;box-shadow: 0px 0.5px 0.5px rgba(0,0,0,0.5);text-align:center;border-radius:10px;}
   .codes .card_wrap .card .image_box img{width:100%;}
@@ -82,9 +84,11 @@
 /* Section Coupons */
 @media screen and (min-width:640px){
   .coupons{}
-  .coupons .rt_cnt .cnt_box{}
-  .coupons .rt_cnt .cnt_box.on{position:fixed;top:80px;left:170px;width:270px;}
-  .coupons .rt_cnt .cnt_box.on #buttons button{display:block;}
+  
+  /*.coupons .lt_cnt .lt_cnt_box{display:none;}
+  .coupons .lt_cnt .lt_cnt_box.on{display:block;position:fixed;top:80px;width:270px;}
+  .coupons .lt_cnt .lt_cnt_box.on button{margin-right:8px;border:0;padding:8px;border-radius:10px;display:inline-block;font-size:17px;}
+  .coupons .lt_cnt .lt_cnt_box.on #buttons button.active{background:#000;color:#fff;}*/
   .coupons .rt_cnt .cnt_box #buttons button{margin-right:8px;border:0;padding:8px;border-radius:10px;display:inline-block;font-size:17px;}
   .coupons .rt_cnt .cnt_box #buttons button.active{background:#000;color:#fff;}
   .coupons .rt_cnt .cnt_box button:hover{border-bottom:1px solid;color:#000;}
