@@ -35,17 +35,21 @@
 @media screen and (min-width:641px) and (max-width:1199px){
   .location{margin-top:180px;}
   .location .inner{padding:5px 0;}
+  .location .inner a{font-size:11px;}
+  .location .inner span a{font-size:11px;}
 }
 
 
 /* Begin Featured Main Page */
 .featured{margin:30px 0 0 0;}
-.featured .sm_pc.on{position:fixed;top:70px;width:17%;}
-.featured .search_bar{position:relative;margin-top:20px;border:1px solid #ccc;}
-.featured .search_bar .form-control{padding:5px 0;width:80%;border:none;}
-.featured .search_bar img{position:absolute;top:3px;right:5px;}
-.featured .filter-search{margin-top:10px;}
-.featured .filter-button{font-weight:300;padding:5px 0;font-size:17px;}
+.featured .sm_pc.on{position:fixed;top:70px;width:290px;}
+.featured .sm_pc .search_bar{position:relative;margin-top:20px;border:1px solid #ccc;}
+.featured .sm_pc .search_bar .form-control{padding:5px 0;width:80%;border:none;}
+.featured .sm_pc .search_bar img{position:absolute;top:3px;right:5px;}
+.featured .sm_pc .filter-search{margin-top:10px;background:#000;padding:5px 10px;}
+.featured .sm_pc .filter-search li{border:1px solid #fff;margin:5px 0;}
+.featured .sm_pc .filter-button{font-weight:300;padding:5px 10px;font-size:17px;color:#fff;width:100%;}
+.featured .sm_pc .filter-button:hover{background:#fff;color:#000;}
 
 .featured .gift_guide{border-bottom:1px solid #ccc;padding-bottom:10px;margin-bottom:20px;}
 .featured .gift_guide .gift_box{float:left;width:31.33%;height:250px;margin:10px 1%;}
@@ -93,9 +97,9 @@
 	.featured{margin:30px 0 0 0;}
 	.featured .lt_cnt{float:left;width:28%;margin:0 2% 30px 0;}
 	.featured .rt_cnt{float:left;width:70%;}
-	.featured .filter-search{margin-top:20px;}
-	.featured .filter-search .form-control{padding:5px 0;width:100%;}
-	.featured .filter-search .filter-button{font-weight:300;padding:10px 0;}
+  .featured .sm_pc.on{width:25.3%;}
+  .featured .sm_pc .filter-search{padding:3px 10px;}
+  .featured .sm_pc .filter-button{font-size:12px;}
 	.featured .gift_guide .gift_box{height:auto;}
 	.featured .gift_guide .gift_box .inner{margin:20% 15%;}
 	.featured .filter-group .filter-node .inner em{font-size:10px;}
@@ -105,7 +109,7 @@
 /* End Featured Main Page */
 
 /* Begin Featured Detail Page */
-.cu_wrap{margin-top:300px;}
+.cu_wrap{margin-top:20px;}
 .cu_wrap .detitle{margin:0 0 100px 0;text-align:center;color:#000;}
 .cu_wrap .detitle h2{font-size:30px;display:inline;border-bottom:0.4em solid rgba(255,0,0,0.2);position:relative;}
 .cu_wrap .detitle h2 span{position:relative;top:0.4em;}
@@ -144,7 +148,7 @@
 }
 
 @media screen and (min-width:641px) and (max-width:1199px){
-  .cu_wrap{margin-top:170px;}
+  .cu_wrap{margin-top:0;}
   .cu_wrap .detitle{margin:0 0 50px 0;}
   .cu_wrap .detitle h2{font-size:25px;}
   .cu_wrap .detitle p{width:70%;}

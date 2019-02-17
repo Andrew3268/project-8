@@ -4,7 +4,7 @@
 .gadgets_wrapper main #filter.on{position:fixed;top:100px;}
 .gadgets_wrapper main #filter .ui-group{}
 .gadgets_wrapper main #filter .ui-group label{font-size:30px;border-bottom:1px solid #ccc;padding-bottom:3px;margin-bottom:20px;display:block;width:80%;}
-.gadgets_wrapper main #filter .ui-group ul{}
+.gadgets_wrapper main #filter .ui-group ul{padding:0 10px;}
 .gadgets_wrapper main #filter .ui-group ul li{}
 .gadgets_wrapper main #filter .ui-group ul li a{margin-top:15px;cursor:pointer;display:block;text-decoration:none;color:#3d3d3d;}
 .gadgets_wrapper main #filter .ui-group ul li a.active{background:#000;color:#fff;}

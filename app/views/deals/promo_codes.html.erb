@@ -44,7 +44,6 @@
           
           
           <div class="lt_sort_box clearfix">
-            <p>Sort by:</p>
             <ul class="clearfix">
               <li><a href="/deals/promo_codes" class="pure-button">All</a></li>
               <li><a href="#" class="pure-button sort1">Price High</a></li>
@@ -80,5 +79,6 @@
       </div><!--./warp-->
     </div><!--./codes-->
   </div><!--./layout-->
-
-<%= render(:partial => 'codes', :handlers => [:erb], :formats => [:js]) %>
+<script>
+ <%= render(:partial => 'codes', :handlers => [:erb], :formats => [:js]) %>
+</script>
