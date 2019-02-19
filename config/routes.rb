@@ -15,8 +15,8 @@ Rails.application.routes.draw do
   get 'blog/index'
   get 'blog/blog_01'
 
-  get 'featured/index'
-  get 'featured/featured_01'
+  # get 'featured/index'
+  # get 'featured/featured_01'
 
   get 'deals/promo_codes'
   get 'deals/coupons'
@@ -33,6 +33,9 @@ Rails.application.routes.draw do
   resources :gadgets
   # root 'gadgets#index'
   # root 'gadgets#index_02'
+
+  resources :recommends
+  # root 'recommends#index'
   
   
 end
