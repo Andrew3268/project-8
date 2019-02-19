@@ -4,7 +4,7 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.all.order("created_at DESC")
-    @gadgets = Gadget.all.order("created_at DESC").page(params[:page]).per_page(10)
+    @gadgets = Gadget.all.order("created_at DESC")
     respond_to do |format|
       format.html
       format.js

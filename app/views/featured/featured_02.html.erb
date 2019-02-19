@@ -1,0 +1,52 @@
+<div class="layout"><!--layout-->
+    
+    <%= render 'posts/header' %>
+
+    <!-- for play youtube video-->
+    <div class="overlay-video">
+      <div class="videoWrapperExt">
+        <div class="videoWrapper">
+          <div class="video_close"></div>
+          <iframe id="player" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>        
+    </div>
+
+    <div class="cu_wrap clearfix">
+      <div class="wrap">
+        
+        <div class="detitle">
+          <h2><span>Main_title</span></h2>
+          <p>main_intor</p>
+        </div>
+
+        <div class="cu_box clearfix">
+          <div class="num">
+            <p>1</p>
+          </div>
+          <div class="pic">
+            <a target="_blank" href="product_link"><img src="image_link"></a>
+            <div class="js-overlay-start start" data-url="youtube_link">
+              <button><img src="<%=asset_path 'youtube_02.png' %>" alt="" /></button>
+            </div>
+          </div>
+          <div class="inner">
+            <strong><span>1.</span>sub_title</strong>
+            <span>by source</span>
+            <p>description</p>
+            <div class="btn clearfix">
+              <em>$_price</em><a target="_blank" href="product_link">Buy Now</a>
+            </div>
+          </div>
+        </div>
+                
+      </div><!--./wrap-->
+    </div><!--./cu_wrap-->
+    
+    <!-- Loading 
+    <div class="loading">
+      <h1 class="loading-title">loading</h1>
+      <div class="loading-progress"></div>
+    </div>
+    -->   
+</div><!--./layout-->

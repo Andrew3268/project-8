@@ -12,13 +12,6 @@
       </div>        
     </div>
 
-    <div style="display:none">
-      <div id="kr" style="display: none;">대한민국 ip로 접속 하셨습니다.</div>
-      <div id="us" style="display: none;">미국 ip로 접속 하셨습니다.</div>
-      <div id="cn" style="display: none;">중국 ip로 접속 하셨습니다.</div>
-      <div id="jp" style="display: none;">일본 ip로 접속 하셨습니다.</div>
-    </div>
-  
     <div class="gadgets">
       <div class="wrap">
         
@@ -42,10 +35,11 @@
                 <div class="btn clearfix">
                   <em>$<%= gadget.gad_price %></em><a target="_blank" href="<%= gadget.gad_link %>">Buy Now</a>
                 </div>
-                
-                <div class="btn clearfix admin">
-                  <em><%= link_to "Edit", edit_gadget_path(gadget) %></em><%= link_to "Delete", gadget_path(gadget), method: :delete, data: {confirm: "Are you sure?"}%>
-                </div>
+                <% if can? :update, gadget %>
+                  <div class="btn clearfix admin">
+                    <em><%= link_to "Edit", edit_gadget_path(gadget) %></em><%= link_to "Delete", gadget_path(gadget), method: :delete, data: {confirm: "Are you sure?"}%>
+                  </div>
+                <% end %>
                 
               </section>
             </div>
@@ -82,10 +76,12 @@
           </div>
           -->
         </div><!--./card_wrap-->
-        <%= will_paginate @gadgets %>
     </div><!--./wrap-->
   </div><!--./gadgets-->
 </div><!--./layout-->
+
+     
+
 <script>
   <%= render(:partial => 'posts', :handlers => [:erb], :formats => [:js]) %>
 </script>

@@ -19,12 +19,14 @@
       
       <div class="membership">
         <ul class="clearfix">
-          <% if user_signed_in? %>
-           <p>Hello, <%= current_user.name %><p>
-           <li><%= link_to "LOG OUT", destroy_user_session_path, method: :delete %></li>
-          <% else %>
-           <li><%= link_to "SIGN IN", new_user_session_path %></li>
-           <li><%= link_to "SIGN UP", new_user_registration_path %></li>
+          <% if can? :update, @gadget %>
+            <% if user_signed_in? %>
+             <p>Hello, <%= current_user.name %><p>
+             <li><%= link_to "LOG OUT", destroy_user_session_path, method: :delete %></li>
+            <% else %>
+             <li><%= link_to "SIGN IN", new_user_session_path %></li>
+             <li><%= link_to "SIGN UP", new_user_registration_path %></li>
+            <% end %>
           <% end %>
         </ul>
       </div>

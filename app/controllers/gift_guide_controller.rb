@@ -3,5 +3,6 @@ class GiftGuideController < ApplicationController
   end
 
   def gift_guide_01
+
   end
 end

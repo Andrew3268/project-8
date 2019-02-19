@@ -25,16 +25,18 @@
                 <li><%= link_to "All Gadgets", gadgets_path %></li>
                 <% Category.all.each do |category| %>
                   <li><%= link_to category.name, gadgets_path(category: category.name) %></li>
-                <% end %>
-                <li><%= link_to "Add New Gadgets", new_gadget_path %></li>
-                <% if user_signed_in? %>
-                  <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
-                <% else %>
-                 <li><%= link_to "Log in", new_user_session_path %></li>
-                 <!--<li><%= link_to "Sign up", new_user_registration_path %></li>-->
+                <% end %>               
+                <% if can? :update, @gadgets %>
+                  <li><%= link_to "Add New Gadgets", new_gadget_path %></li>
+                  <% if user_signed_in? %>
+                    <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
+                  <% else %>
+                   <li><%= link_to "Log in", new_user_session_path %></li>
+                   <!--<li><%= link_to "Sign up", new_user_registration_path %></li>-->
+                  <% end %>
                 <% end %>
               </ul>
-              <button class="gnb_close"><img src="<%=asset_path 'close_black.png' %>" alt="close menu" /></button>
+              <button class="gnb_close"><img src="<%=asset_path 'close_white.png' %>" alt="close menu" /></button>
             </div>
           </section>
           <div class="gnb_kbg"></div>
@@ -57,24 +59,11 @@
                     </div>
                     
                     <section class="card-body">
-                      <!--
-                      <nav class="card-nav">
-                        <button class="nav-dots">
-                        <span class="nav-icon icon-one"></span>
-                        <span class="nav-icon icon-two"></span>
-                        <span class="nav-icon icon-three"></span>
-                        </button>
-                        <ul>
-                        <li><a href="">Link One</a></li>
-                        <li><a href="">Link Two</a></li>
-                        <li><a href="">Link Three</a></li>
-                        </ul>
-                      </nav>
-                      -->
                       <div class="js-overlay-start start" data-url= "<%= gadget.gad_youtube %>">
                         <button><img src="<%=asset_path 'youtube_02.png' %>" alt="" /></button>
                       </div>
-                    
+
+                     
                       <h4><a target="_blank" href="<%= gadget.gad_link %>"><%= gadget.gad_title %></a></h4>
                       <p><%= gadget.gad_intro %></p>
                       <div class="btn clearfix">
@@ -84,7 +73,6 @@
                   </div>
                 <% end %>
              </div><!--./card_wrap-->
-             <%= will_paginate @gadgets %>
          </div><!--./on_gadgets-->
         </main>
       </div><!--./wrap-->

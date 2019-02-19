@@ -2,18 +2,9 @@ class GadgetsController < ApplicationController
 
   before_action :find_gadget, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :show]
+  load_and_authorize_resource
 
   def index
-    if params[:category].blank?
-     @gadgets = Gadget.all.order("created_at DESC").page(params[:page]).per_page(10)
-    else
-      @category_id = Category.find_by(name: params[:category]).id
-      @gadgets = Gadget.where(category_id: @category_id).order("created_at DESC").page(params[:page]).per_page(10)
-    end
-  end
-
-
-  def index_02
     if params[:category].blank?
      @gadgets = Gadget.all.order("created_at DESC")
     else
