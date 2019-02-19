@@ -4,19 +4,19 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
-
+ 
 
 gem 'simple_form', '~> 4.1'
 gem 'devise', '~> 4.5'
 gem 'paperclip', '~> 6.1'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
-gem 'will_paginate', '~> 3.1', '>= 3.1.6'
+# gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.4'
 gem 'enumerize', '~> 2.2', '>= 2.2.2'
 gem 'cancancan', '~> 2.3'
 gem 'rolify', '~> 5.2'
-
+gem 'rails_admin', '~> 1.4', '>= 1.4.2'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6'
 # Use sqlite3 as the database for Active Record

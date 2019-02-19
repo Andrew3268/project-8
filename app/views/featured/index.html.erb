@@ -24,18 +24,19 @@
     			</div>
     			<button class="gnb_open"><img src="<%=asset_path 'open_black.png' %>" alt="모바일 메뉴 열기" /></button>
     			<div class="sm_pc">
-    			  
-    				<!--<div class="search_bar">-->
-    				<!--	<input type="text" class="form-control" placeholder="Search...">-->
-    				<!--	<img src="<%=asset_path 'search.png' %>" alt="" />-->
-    				<!--</div>-->
-
+    			  <!--
+    				<div class="search_bar">
+    					<input type="text" class="form-control" placeholder="Search...">
+    				  <img src="<%=asset_path 'search.png' %>" alt="" />
+    				</div>
+            -->
     				<ul class="filter-search">
     				  <li><button class="filter-button btn btn-md btn-primary" data-filter="*">All Featured</button></li>
     				  <li><button class="filter-button btn btn-md white-text" data-filter="tech">Tech+</button></li>
     				  <li><button class="filter-button btn btn-md" data-filter="smarthome">Smart Home</button></li>
     				  <li><button class="filter-button btn btn-md" data-filter="kitchen">Kitchen&Home</button></li>
     				  <li><button class="filter-button btn btn-md white-text" data-filter="fashion">Fashion</button></li>
+              <li><button class="filter-button btn btn-md white-text" data-filter="travel">Travel</button></li>
     				  <li><button class="filter-button btn btn-md white-text" data-filter="geeky">Geeky</button></li>
     				</ul>
     			</div>
@@ -47,6 +48,7 @@
     				  <li><button class="filter-button btn btn-md" data-filter="smarthome">Smart Home</button></li>
     				  <li><button class="filter-button btn btn-md" data-filter="kitchen">Kitchen&Home</button></li>
     				  <li><button class="filter-button btn btn-md white-text" data-filter="fashion">Fashion</button></li>
+              <li><button class="filter-button btn btn-md white-text" data-filter="travel">Travel</button></li>
     				  <li><button class="filter-button btn btn-md white-text" data-filter="geeky">Geeky</button></li>
     				</ul>
     				<button class="gnb_close"><img src="<%=asset_path 'close_white.png' %>" alt="모바일 메뉴 닫기" />
@@ -85,7 +87,13 @@
     				</a>
     			</div>
     			-->
-			
+          <div class="filter-group clearfix">
+            <%= render 'featured/body_left' %>
+          </div>
+
+
+
+			   <div style="display:none;">
     			<div class="featured_left">
     				<div class="filter-group clearfix">
     				
@@ -101,6 +109,8 @@
 
     				</div><!--./filter-group-->		
     			</div><!--./featured_right-->
+         </div>
+
     		</div><!--./rt_cnt-->
       </div><!--./featured-->
   </div><!--./wrap-->
