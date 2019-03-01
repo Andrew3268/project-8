@@ -1,23 +1,27 @@
 class RecommendsController < ApplicationController
 
   before_action :find_recommend, only: [:show, :edit, :update, :destroy]
-  # before_action :authenticate_user!, except: [:index, :show]
-  # load_and_authorize_resource
+  before_action :authenticate_user!, except: [:index, :show]
+  load_and_authorize_resource
 
 
   def index
     @recommends = Recommend.all.order("created_at DESC")
+    if params[:search]
+       @search_term = params[:search]
+       @recommends = @recommends.search_by(@search_term)
+    end
   end
 
   def show
   end
 
   def new
-    @recommend = Recommend.new
+    @recommend = current_user.recommends.build
   end
 
   def create
-    @recommend = Recommend.new(recommend_params)
+    @recommend = current_user.recommends.build(recommend_params)
       if @recommend.save
         redirect_to @recommend
       else
@@ -38,7 +42,7 @@ class RecommendsController < ApplicationController
 
   def destroy
     @recommend.destroy
-      redirect_to root_path
+      redirect_to '/recommends/'
   end
 
   private

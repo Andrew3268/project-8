@@ -17,7 +17,7 @@
 .gadgets .card_wrap .card-header img{display:block;width:100%;}
 .gadgets .card_wrap .with-photo/*do not delete*/
 .gadgets .card_wrap .card-header{height:208px;padding:0;overflow:hidden;}
-.gadgets .card_wrap .start{position:absolute;top:-20px;left:15px;}
+.gadgets .card_wrap .start{position:absolute;top:-45px;left:15px;}
 .gadgets .card_wrap .start img{width:30px;}
 
 @media screen and (max-width:640px){
@@ -26,9 +26,7 @@
   .gadgets .card_wrap .card-header{padding:5px;}
   .gadgets .card_wrap .card-body{padding:10px;}
   .gadgets .card_wrap .card-body h4{margin:15px 0;}
-  .gadgets .card_wrap .card-nav{top:-25px;}
-  .gadgets .card_wrap .sns{top:-25px;}
-  .gadgets .card_wrap .start{top:-25px;}
+  .gadgets .card_wrap .start{top:-45px;}
 }
 
 @media screen and (min-width:641px) and (max-width:1199px){
@@ -36,9 +34,7 @@
   .gadgets .card_wrap .card-header{padding:5px;}
   .gadgets .card_wrap .card-body{padding:10px;}
   .gadgets .card_wrap .card-body h4{margin:15px 0;}
-  .gadgets .card_wrap .card-nav{top:-25px;}
-  .gadgets .card_wrap .sns{top:-25px;}
-  .gadgets .card_wrap .start{top:-25px;}
+  .gadgets .card_wrap .start{top:-45px;}
 }
 
 

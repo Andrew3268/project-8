@@ -212,7 +212,7 @@ header .gnb_m,header .gnb_open2{display:none;}
 }
 
 
-/* play youtube video */
+/* Youtube */
 .overlay-video{display:none;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity: 0;-webkit-transition:opacity 600ms ease-in;transition:opacity 600ms ease-in;-webkit-transition:opacity .6s;transition:opacity .6s;position:fixed;top:0;left:0;height:100%;width:100%;background:rgba(0, 0, 0, 0.7);z-index:310;}
 .o1{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";opacity:1;-webkit-transition: opacity 600ms ease-out;transition:opacity 600ms ease-out;-webkit-transition:opacity .6s;transition:opacity .6s;}
 .videoWrapperExt{position:relative;top:50%;left:50%;-webkit-transform: translate(-50%, -50%);transform:translate(-50%, -50%);max-width: 982px;padding: 0 20px;}
@@ -238,5 +238,26 @@ header .gnb_m,header .gnb_open2{display:none;}
 .input_wrap .ib_comm p{font-size:17px;background:#000;color:#fff;padding:3px;margin-bottom:5px;}
 .input_wrap .input_footer{display:block;}
 
+/* Devise From */
+.devise{background:#000;height:600px;padding-top:150px;}
+.devise .box{background:#fff;width:50%;height:50%;margin:0 auto;padding:50px;}
+.devise .box h2{margin-bottom:10px;}
+.devise .box .form-inputs .input_box input{display:block;width:90%;height:20px;margin-bottom:20px;border:none;border-bottom:1px solid;}
+.devise .box .form-inputs .remember_me input{margin-right:5px;}
+.devise .box .form-actions{}
+.devise .box .form-actions .btn{border:none;background:#000;color:#fff;padding:5px 20px;cursor:pointer;margin:20px 0;font-size:15px;} 
+.devise .box .box_left{float:left;width:46%;margin:0 1.5%;border-right:1px solid;}
+.devise .box .box_right{float:left;width:46%;margin:0 1.5%;}
+.shared_links{}
+.shared_links a{text-decoration:none;color:#000;}
+.log_in {text-align:center;position:fixed;bottom:20px;margin:0 auto;right:20px;border-radius:50%;background:#000;padding:8px;box-shadow: 0px 0px 6px 1px #3d3d3d;}
+.log_in a{text-decoration:none;color:#fff;}
+.log_in .fa{font-size:20px;}
 
+@media screen and (max-width:640px){
+  .devise{padding-top:50px;}
+  .devise .box{width:60%;}
+  .devise .box .box_left{float:left;width:100%;margin:0 0 30px 0;border-right:none;}
+  .devise .box .box_right{float:left;width:100%;margin:0;}
+}
 

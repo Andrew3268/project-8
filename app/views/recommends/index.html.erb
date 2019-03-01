@@ -24,12 +24,16 @@
           </div>
           <button class="gnb_open"><img src="<%=asset_path 'open_black.png' %>" alt="모바일 메뉴 열기" /></button>
           <div class="sm_pc">
-            <!--
-            <div class="search_bar">
+            
+           <!--  <div class="search_bar">
               <input type="text" class="form-control" placeholder="Search...">
               <img src="<%=asset_path 'search.png' %>" alt="" />
             </div>
-            -->
+            
+            <%= form_for "",url: recommends_path, role: "search", method: :get do %>
+              <%= text_field_tag :search, @search_term,placeholder: "Search..." %>
+            <% end %> -->
+
             <ul class="filter-search">
               <li><button class="filter-button btn btn-md btn-primary" data-filter="*">All Featured</button></li>
               <li><button class="filter-button btn btn-md white-text" data-filter="tech">Tech+</button></li>

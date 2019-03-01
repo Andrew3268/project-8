@@ -7,6 +7,7 @@
     <link rel="shortcut icon" type="image/jpg" href="https://goo.gl/qBPfBM">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, initial-scale=1, user-scalable=no" />
     <!--<script src="javascripts/jquery-1.12.4.min.js"></script>-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -20,6 +21,20 @@
 
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
+
+    
+      <div class="log_in">
+        <% if user_signed_in? %>
+         <%= link_to destroy_user_session_path, method: :delete  do %>
+          <%= fa_icon "sign-out" %>
+         <% end %>
+        <% else %>
+          <%= link_to new_user_session_path do %>
+            <%= fa_icon "sign-in" %>
+          <% end %>
+        <% end %>
+      </div>
+    
     
   </body>
 
